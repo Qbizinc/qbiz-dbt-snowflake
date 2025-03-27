@@ -17,7 +17,6 @@ poc_dbt_snowflake: # This name MUST match the 'profile:' setting in dbt_project.
 
       threads: 4 # Example value
       client_session_keep_alive: False
-      # query_tag: dbt_poc_run # Optional: helps identify queries in Snowflake history
 
     # You could define a 'prod' target here too, reading the same env vars
     # or potentially different ones if your user_data script logic changed based on target

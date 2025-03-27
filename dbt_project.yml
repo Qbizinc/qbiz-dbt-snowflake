@@ -1,5 +1,5 @@
 # Give your project a name
-name: 'poc_dbt_snowflake' # Choose a name for your project
+name: 'poc_dbt_snowflake'
 version: '1.0.0'
 config-version: 2
 
@@ -8,7 +8,6 @@ profile: 'poc_dbt_snowflake' # Matches the profile name in profiles.yml
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
-# found in the "models/" directory. You probably won't need to change these!
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
