@@ -1,0 +1,30 @@
+# Give your project a name
+name: 'poc_dbt_snowflake' # Choose a name for your project
+version: '1.0.0'
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'poc_dbt_snowflake' # Matches the profile name in profiles.yml
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+# You might want to configure default materializations here
+# models:
+#   poc_dbt_snowflake:
+#     # Config indicated by + and applies to all resources under models/example/
+#     example:
+#       +materialized: view # Example: Make all example models views by default
+
+# Clean target directory upon `dbt clean`
+clean-targets:
+  - "target"
+  - "dbt_packages"
+  - "logs"

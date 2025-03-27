@@ -1,0 +1,34 @@
+poc_dbt_snowflake: # This name MUST match the 'profile:' setting in dbt_project.yml
+  target: "{{ env_var('DBT_TARGET', 'dev') }}" # Reads DBT_TARGET env var set by user_data.sh
+  outputs:
+    dev: # Target name, should match DBT_TARGET value
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}" # Reads env var set by user_data.sh
+
+      # --- User/Password Authentication ---
+      user: "{{ env_var('SNOWFLAKE_USER') }}"       # Reads env var set by user_data.sh
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}" # Reads env var set by user_data.sh
+
+      # Role, Warehouse, Database, Schema
+      role: "{{ env_var('SNOWFLAKE_ROLE') }}"         # Reads env var set by user_data.sh
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE') }}" # Reads env var set by user_data.sh
+      database: "{{ env_var('SNOWFLAKE_DATABASE') }}"   # Reads env var set by user_data.sh
+      schema: "{{ env_var('SNOWFLAKE_SCHEMA') }}"       # Reads env var set by user_data.sh
+
+      threads: 4 # Example value
+      client_session_keep_alive: False
+      # query_tag: dbt_poc_run # Optional: helps identify queries in Snowflake history
+
+    # You could define a 'prod' target here too, reading the same env vars
+    # or potentially different ones if your user_data script logic changed based on target
+    # prod:
+    #   type: snowflake
+    #   account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+    #   user: "{{ env_var('SNOWFLAKE_USER') }}"
+    #   password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+    #   role: "{{ env_var('SNOWFLAKE_PROD_ROLE', env_var('SNOWFLAKE_ROLE')) }}" # Example: override role for prod
+    #   warehouse: "{{ env_var('SNOWFLAKE_PROD_WAREHOUSE', env_var('SNOWFLAKE_WAREHOUSE')) }}" # Example: override warehouse
+    #   database: "{{ env_var('SNOWFLAKE_DATABASE') }}"
+    #   schema: "{{ env_var('SNOWFLAKE_PROD_SCHEMA', env_var('SNOWFLAKE_SCHEMA')) }}" # Example: override schema
+    #   threads: 8
+    #   ...
