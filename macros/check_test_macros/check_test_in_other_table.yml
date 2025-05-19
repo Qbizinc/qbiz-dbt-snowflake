@@ -1,0 +1,19 @@
+
+version: 2
+
+macros:
+  - name: check_test_in_other_table
+    description: "Macro to check if some value is registered in another table as test"
+    arguments:
+      - name: col
+        description: "Name of the column with the value to check against another table's test values – e.g. 'external_user_id'"
+        type: string
+      - name: ref_table
+        description: "The table which has the marked test values – e.g. ref('cpd_user_profile_user_profile')"
+        type: reference
+      - name: ref_col
+        description: "Name of the column in the comparison table that matches the values of the current table – e.g. 'kinship_user_id'"
+        type: string
+      - name: substring
+        description: "Any substring from the col variable to remove before the comparison – e.g. 'sub_'. Defaults to an empty string"
+        type: string

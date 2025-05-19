@@ -1,0 +1,50 @@
+
+version: 2
+
+macros:
+  - name: scd_time_columns
+    description: "Macro to add the valid_from, valid_to columns and the is_current and is_first_record flags in a SCD2 model."
+    arguments:
+      - name: scd_key_col
+        description: "Name of the column with the identifier for an entity. It usually is the natural key – e.g. user ID for users"
+        type: string
+      - name: initial_record_time_col
+        description: "Name of the datetime column that marks the start of the validity of the first record"
+        type: string
+      - name: update_time_col
+        description:  "Name of the datetime column that marks the start of the validity of consequent records / any
+                       update to the entity tracked. Defaults to 'combined_update_ts' to match the ranked_data_columns macro."
+        type: string
+      - name: row_num_col
+        description: "Name of the column with the row numbers for a given entity. Defaults to 'row_num'"
+        type: string
+  - name: valid_from_col
+    description: "Macro to create the valid_from column in a SCD2 model"
+    arguments:
+      - name: initial_record_time_col
+        description: "Name of the datetime column that marks the start of the validity of the first record"
+        type: string
+      - name: update_time_col
+        description:  "Name of the datetime column that marks the start of the validity of consequent records"
+        type: string
+      - name: row_num_col
+        description: "Name of the column with the row numbers for a given entity. Defaults to 'row_num'"
+        type: string
+  - name: valid_to_col
+    description: "Macro to create the valid_to column in a SCD2 model"
+    arguments:
+      - name: scd_key_col
+        description: "Name of the column with the identifier for an entity. It usually is the natural key – e.g. user ID for users"
+        type: string
+      - name: update_time_col
+        description:  "Name of the datetime column that marks the update of a record"
+        type: string
+  - name: is_current_col
+    description: "Macro to create the is_current flag in a SCD2 model"
+    arguments:
+      - name: scd_key_col
+        description: "Name of the column with the identifier for an entity. It usually is the natural key – e.g. user ID for users"
+        type: string
+      - name: update_time_col
+        description:  "Name of the datetime column that marks the update of a record"
+        type: string

@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: TPCDS
+    description: "This points to the base TPCDS schema in snowflake"
+    database: QBIZ_DATA
+    tables:
+      - name: CUSTOMER
+      - name: DATE_DIM
+      - name: STORE
+      - name: STORE_SALES
+      - name: WEB_PAGE
+      - name: WEB_SALES

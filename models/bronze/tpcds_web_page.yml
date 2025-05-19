@@ -1,0 +1,53 @@
+version: 2
+
+models:
+  - name: tpcds_web_page
+    description: "TPCDS web_page dimension table containing web page metadata and attributes."
+    columns:
+      - name: WP_WEB_PAGE_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the web page."
+      - name: WP_WEB_PAGE_ID
+        data_type: string
+        description: "Business key for the web page."
+      - name: WP_REC_START_DATE
+        data_type: date
+        description: "Record start date."
+      - name: WP_REC_END_DATE
+        data_type: date
+        description: "Record end date."
+      - name: WP_CREATION_DATE_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the web page creation date."
+      - name: WP_ACCESS_DATE_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the web page access date."
+      - name: WP_AUTOGEN_FLAG
+        data_type: string
+        description: "Flag indicating if the page was auto-generated."
+      - name: WP_CUSTOMER_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the customer associated with the web page."
+      - name: WP_URL
+        data_type: string
+        description: "URL of the web page."
+      - name: WP_TYPE
+        data_type: string
+        description: "Type of web page."
+      - name: WP_CHAR_COUNT
+        data_type: numeric(38,0)
+        description: "Character count of the web page."
+      - name: WP_LINK_COUNT
+        data_type: numeric(38,0)
+        description: "Number of links on the web page."
+      - name: WP_IMAGE_COUNT
+        data_type: numeric(38,0)
+        description: "Number of images on the web page."
+      - name: WP_MAX_AD_COUNT
+        data_type: numeric(38,0)
+        description: "Maximum number of ads allowed on the web page."
+      - "{{ var('bronze_layer_ddl')['hash_key_column'] }}"
+      - "{{ var('common_ddl')['etl_created_ts_column'] }}"
+      - "{{ var('common_ddl')['etl_updated_ts_column'] }}"
+      - "{{ var('common_ddl')['updated_by_column'] }}"
+      - "{{ var('common_ddl')['update_notes_column'] }}"

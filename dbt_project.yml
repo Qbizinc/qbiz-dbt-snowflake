@@ -27,3 +27,220 @@ clean-targets:
   - "target"
   - "dbt_packages"
   - "logs"
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/
+# directory as views. These settings can be overridden in the individual model
+# files using the `{{ config(...) }}` macro.
+models:
+  # Rename for Environment X as needed (profile name, as defined in profiles.yml)
+  poc_dbt_snowflake:
+    # Config indicated by + and applies to all files under models/example/
+    bronze:
+      +schema: bronze
+      +materialized: incremental
+      +on_schema_change: append_new_columns
+      +incremental_strategy: merge
+      +unique_key: hash_key
+      +merge_update_columns: [etl_updated_ts, updated_by, update_notes]
+      +contract:
+        enforced: true
+        alias_types: true
+      +tags:
+        - "bronze"
+      +docs:
+        node_color: "#CD7F32"  # Bronze
+    gold:
+      +materialized: view
+      +schema: gold
+      +tags:
+        - "gold"
+      +docs:
+#        node_color: "#FFD700"  # Gold
+        node_color: "#EFBF04"  # Alt Gold
+    lookup_tables:
+      +schema: lookup_tables
+      +materialized: incremental
+      +on_schema_change: append_new_columns
+      +incremental_strategy: merge
+      +unique_key: hash_key
+      +merge_update_columns: [etl_updated_ts, updated_by, update_notes]
+      +contract:
+        enforced: true
+        alias_types: true
+      +tags:
+        - "lookup_tables"
+      +docs:
+        node_color: "#C4A484"   # Light Brown
+    silver_dim:
+      +materialized: incremental
+      +schema: silver
+      +on_schema_change: append_new_columns
+      +incremental_strategy: custom_scd_type2
+      +contract:
+        enforced: true
+        alias_types: true
+      +tags:
+        - "silver"
+      +docs:
+        node_color: "#C0C0C0"  # Silver
+    silver_fact:
+      +schema: silver
+      +materialized: incremental
+      +on_schema_change: append_new_columns
+      +incremental_strategy: merge
+      +merge_update_columns: [etl_updated_ts, update_notes, updated_by]
+      +contract:
+        enforced: true
+        alias_types: true
+      +tags:
+        - "silver"
+      +docs:
+        node_color: "#C0C0C0" # Silver
+    # NOTE: When/Why pii schema    
+    silver_pii:
+      +schema: silver_pii
+      +materialized: incremental
+      +on_schema_change: append_new_columns
+      +incremental_strategy: custom_scd_type2
+      +contract:
+        enforced: true
+        alias_types: true
+      +tags:
+        - "pii"
+        - "silver"
+      +docs:
+        node_color: "#C0C0C0"  # Silver
+        
+    # schema for unit tests
+    tests: 
+      +schema: tests
+      +on_schema_change: sync_all_columns
+      +tags:
+        - "test"
+      +contract:
+        enforced: false
+      +docs:
+        node_color: "#99C9D4"  # light blue
+
+seeds:
+  qbiz:
+    +enabled: true
+    +schema: lookup_tables
+    +tags:
+      - "lookup_tables"
+      - "seed"
+    +docs:
+      node_color: "#964B00"  # Brown
+
+vars:
+  dbt_date:time_zone: "utc"
+  lookback_window:
+    default: # referenced in apply_date_filters macro
+      start_days: null # no limit on historical lookback, depends on max date in model when incremental 
+      end_days: null # by default, do not consider an upper bound
+  common_ddl:
+    etl_created_ts_column:
+      name: etl_created_ts
+      description: "UTC timestamp when the Bronze Layer record was created"
+      data_type: timestamp_tz
+      data_tests:
+        - not_null
+    etl_updated_ts_column:
+      name: etl_updated_ts
+      description: "UTC timestamp when the Bronze Layer record was last updated"
+      data_type: timestamp_tz
+      data_tests:
+        - not_null
+    update_notes_column:
+      name: update_notes
+      description: "Additional notes on the update"
+      data_type: string
+    updated_by_column:
+      name: updated_by
+      description: "User who last updated the record"
+      data_type: string
+      data_tests:
+        - not_null
+
+  bronze_layer_ddl:
+    hash_key_column:
+      name: hash_key
+      description: "Unique identifier of Bronze Layer entry"
+      data_type: string
+      data_tests:
+        - not_null
+        - unique
+    source_created_ts_column:
+      name: source_created_ts
+      description: "UTC timestamp when the record was created in the source table"
+      data_type: timestamp
+    source_updated_ts_column:
+      name: source_updated_ts
+      description: "UTC timestamp when the record was updated in the source table"
+      data_type: timestamp
+    test_flag_column:
+      name: is_test
+      description: "Flag of whether the record is considered a test record"
+      data_type: boolean
+
+  silver_layer_dim_ddl:
+    first_record_flg_column:
+      name: first_record_flg
+      description: "When true, indicates that the record is the first instance for that id. Only used as part of the ETL logic."
+      data_type: boolean
+      data_tests:
+        - not_null
+    hash_key_column:
+      name: hash_key
+      description: "Hash of values in the source table, used to identify meaningful changes to be captured"
+      data_type: string
+      data_tests:
+        - not_null
+    is_current_column:
+      name: is_current
+      description: "When true, indicates that the record is active record for this subscription. Needs to be called 'is_current' because of how dbt does things behind the scenes."
+      data_type: boolean
+      data_tests:
+        - not_null
+    scd_key_column:
+      name: scd_key
+      description: "Unique key used by the custom_scd_type2_strategy macro"
+      data_type: string
+    valid_from_column:
+      name: valid_from
+      description: "[Specify TZ] timestamp the record became active in the dimension. Needs to be called 'valid_from' because of how dbt does things behind the scenes."
+      data_type: timestamp
+      data_tests:
+        - not_null
+    valid_to_column:
+      name: valid_to
+      description: "[Specify TZ] timestamp the record became inactive in the dimension. Is set to null for the active record. Needs to be called 'valid_to' because of how dbt does things behind the scenes. We'd also like it to be something other than null, but dbt currently overrides that."
+      data_type: timestamp
+  silver_layer_fact_ddl:
+    hash_key_column:
+      name: hash_key
+      description: "Hash of values in the source table, used to identify meaningful changes to be captured"
+      data_type: string
+    etl_watermark_ts_column:
+      name: etl_watermark_ts
+      description: "UTC timestamp used by the ETL to control incremental loads."
+      data_type: timestamp
+    event_context_column:
+      name: event_context
+      description: "Additional information regarding the event"
+      data_type: string
+    event_detail_column:
+      name: event_detail
+      description: "Detail information for the event. Such as: third party id, status, simple description, etc. Content depends on the event type."
+      data_type: string
+    event_ts_column:
+      name: event_ts
+      description: "UTC timestamp when the event occurred, if known. If no specific ts is available, the source update ts is used as a 'best guess' value."
+      data_type: timestamp
+
+flags:
+  use_colors_file: false
+  log_level: info  

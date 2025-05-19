@@ -1,0 +1,10 @@
+
+version: 2
+
+macros:
+  - name: create_bronze_iterable_list_users
+    description: "Macro that creates bronze layer model for emails belonging to an iterable list"
+    arguments:
+      - name: iterable_list_id
+        description: "Iterable list id used to create the table"
+        type: string

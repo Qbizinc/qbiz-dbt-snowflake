@@ -1,0 +1,10 @@
+
+version: 2
+
+macros:
+  - name: convert_string_columns_to_ints
+    description: "Macro that transforms the string columns to integer – where values end with '.0'"
+    arguments:
+      - name: columns
+        description: "List of column names to convert"
+        type: array

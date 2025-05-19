@@ -1,0 +1,10 @@
+
+version: 2
+
+macros:
+  - name: string_to_bool
+    description: "Macro to convert string values ('true', 'false') to booleans."
+    arguments:
+      - name: col
+        description: "Name of column whose values to convert – e.g. 'active'"
+        type: string

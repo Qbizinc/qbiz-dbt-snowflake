@@ -1,0 +1,6 @@
+
+version: 2
+
+macros:
+  - name: mock_ga4_untested_columns
+    description: "Unit tests require all columns to be mocked. This macro mocks the untested columns for reuse in simplified model and fixtures"

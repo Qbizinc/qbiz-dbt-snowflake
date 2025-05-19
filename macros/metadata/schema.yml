@@ -1,0 +1,13 @@
+version: 2
+macros:
+  - name: list_tables
+    description: |
+      This macro returns a query on the information schema and returns all tables in the database.
+    arguments: []
+
+
+  - name: log_database_tables
+    description: |
+      This macro runs the query returned by `list_tables` logs the formatted result to dbt logs.
+      It can be invoked with `dbt run-operation log_database_tables` to log all the tables in your database.
+    arguments: []

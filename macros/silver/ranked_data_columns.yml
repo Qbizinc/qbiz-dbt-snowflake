@@ -1,0 +1,75 @@
+
+version: 2
+
+macros:
+  - name: ranked_data_columns
+    description: "Adds the row number and combined update timestamp column to the ranked data, handling the incremental logic."
+    arguments:
+      - name: scd_key_col
+        description: "Name of the column with the identifier for an entity. It usually is the natural key – e.g. user ID for users"
+        type: string
+      - name: primary_update_time_col
+        description: "Name of the column that should be used as a primary source for record update times"
+        type: string
+      - name: secondary_update_time_col
+        description: "Name of the column that should be used as a fallback source for record update times –
+                      in case the primary source is not sufficient i.e. might overlap between records.
+                      Defaults to an empty string."
+        type: string
+      - name: combined_ts_col_name
+        description: "The name that should be given to the combined update timestamp column
+                      (the primary source if unique, the secondary if not). Defaults to 'combined_update_ts'."
+        type: string
+      - name: row_num_col_name
+        description: "Name to be given to the ranked row number column. Defaults to 'row_num'."
+        type: string
+  - name: combined_update_time_col
+    description: "Combines the primary and secondary update time sources to provide a unique
+                  update time in case the primary update time source overlaps between records."
+    arguments:
+      - name: scd_key_col
+        description: "Name of the column with the identifier for an entity. It usually is the natural key – e.g. user ID for users"
+        type: string
+      - name: primary_update_time_col
+        description: "Name of the column that should be used as a primary source for record update times"
+        type: string
+      - name: secondary_update_time_col
+        description: "Name of the column that should be used as a fallback source for record update times –
+                      in case the primary source is not sufficient i.e. might overlap between records."
+        type: string
+      - name: combined_ts_col_name
+        description: "The name that should be given to the combined update timestamp column
+                      (the primary source if unique, the secondary if not)."
+        type: string
+  - name: incremental_row_num_col
+    description: "Handles incremental loads' ranking logic."
+    arguments:
+      - name: scd_key_col
+        description: "Name of the column with the identifier for an entity. It usually is the natural key – e.g. user ID for users"
+        type: string
+      - name: primary_update_time_col
+        description: "Name of the column that should be used as a primary source for record update times"
+        type: string
+      - name: secondary_update_time_col
+        description: "Name of the column that should be used as a fallback source for record update times –
+                      in case the primary source is not sufficient i.e. might overlap between records."
+        type: string
+      - name: row_num_col_name
+        description: "Name to be given to the ranked row number column."
+        type: string
+  - name: initial_row_num_col
+    description: "Handles the initial load's ranking logic."
+    arguments:
+      - name: scd_key_col
+        description: "Name of the column with the identifier for an entity. It usually is the natural key – e.g. user ID for users"
+        type: string
+      - name: primary_update_time_col
+        description: "Name of the column that should be used as a primary source for record update times"
+        type: string
+      - name: secondary_update_time_col
+        description: "Name of the column that should be used as a fallback source for record update times –
+                      in case the primary source is not sufficient i.e. might overlap between records."
+        type: string
+      - name: row_num_col_name
+        description: "Name to be given to the ranked row number column."
+        type: string

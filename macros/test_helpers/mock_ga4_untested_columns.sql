@@ -1,0 +1,32 @@
+{% macro mock_ga4_untested_columns() -%}
+      NULL as app_info
+    , NULL as batch_event_index
+    , NULL as batch_ordering_id
+    , NULL as batch_page_id
+    , NULL as collected_traffic_source
+    , NULL as device
+    , NULL as ecommerce
+    , NULL as event_bundle_sequence_id
+    , NULL as event_dimensions
+    , NULL as event_name
+    , NULL as event_params
+    , NULL as event_previous_timestamp
+    , NULL as event_server_timestamp_offset
+    , NULL as event_timestamp
+    , NULL as event_value_in_usd
+    , NULL as geo
+    , NULL as is_active_user
+    , NULL as items
+    , NULL as partition_0
+    , NULL as platform
+    , NULL as privacy_info
+    , NULL as publisher
+    , NULL as session_traffic_source_last_click
+    , NULL as stream_id
+    , NULL as traffic_source
+    , NULL as user_first_touch_timestamp
+    , NULL as user_id
+    , NULL as user_ltv
+    , NULL as user_properties
+    , NULL as user_pseudo_id
+{%- endmacro %}

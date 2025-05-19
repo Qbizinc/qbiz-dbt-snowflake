@@ -1,0 +1,19 @@
+
+version: 2
+
+macros:
+  - name: create_lag_cols
+    description: "Macro that creates lagged value columns for a given list of fields."
+    arguments:
+      - name: lag_cols
+        description: "List of column names to create a lagged value column for."
+        type: array
+      - name: partition_col
+        description: "Name of the column to partition the lagged values by – e.g. 'kinship_user_id'."
+        type: string
+      - name: order_col
+        description: "Name of the column to order by the lagged values by – e.g. 'source_updated_ts'."
+        type: string
+      - name: asc_desc
+        description: "Whether the ordering should be ascending ('ASC') or descending ('DESC'). Defaults to 'ASC'."
+        type: string

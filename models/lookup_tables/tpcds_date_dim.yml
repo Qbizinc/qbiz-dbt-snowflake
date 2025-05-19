@@ -1,0 +1,95 @@
+version: 2
+
+models:
+  - name: tpcds_date_dim
+    description: "TPCDS date dimension table containing detailed calendar attributes."
+    columns:
+      - name: D_DATE_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the date (primary key)."
+      - name: D_DATE_ID
+        data_type: string
+        description: "Business key identifier for the date."
+      - name: D_DATE
+        data_type: date
+        description: "Actual calendar date value."
+      - name: D_MONTH_SEQ
+        data_type: numeric(38,0)
+        description: "Monthly sequence number."
+      - name: D_WEEK_SEQ
+        data_type: numeric(38,0)
+        description: "Weekly sequence number."
+      - name: D_QUARTER_SEQ
+        data_type: numeric(38,0)
+        description: "Quarterly sequence number."
+      - name: D_YEAR
+        data_type: numeric(38,0)
+        description: "Calendar year number."
+      - name: D_DOW
+        data_type: numeric(38,0)
+        description: "Day of week (0-6)."
+      - name: D_MOY
+        data_type: numeric(38,0)
+        description: "Month of year (1-12)."
+      - name: D_DOM
+        data_type: numeric(38,0)
+        description: "Day of month (1-31)."
+      - name: D_QOY
+        data_type: numeric(38,0)
+        description: "Quarter of year (1-4)."
+      - name: D_FY_YEAR
+        data_type: numeric(38,0)
+        description: "Fiscal year number."
+      - name: D_FY_QUARTER_SEQ
+        data_type: numeric(38,0)
+        description: "Fiscal quarter sequence."
+      - name: D_FY_WEEK_SEQ
+        data_type: numeric(38,0)
+        description: "Fiscal week sequence."
+      - name: D_DAY_NAME
+        data_type: string
+        description: "Full name of the day (e.g., Monday)."
+      - name: D_QUARTER_NAME
+        data_type: string
+        description: "Quarter name (e.g., Q1)."
+      - name: D_HOLIDAY
+        data_type: string
+        description: "Holiday indicator (Y/N)."
+      - name: D_WEEKEND
+        data_type: string
+        description: "Weekend indicator (Y/N)."
+      - name: D_FOLLOWING_HOLIDAY
+        data_type: string
+        description: "Following holiday indicator (Y/N)."
+      - name: D_FIRST_DOM
+        data_type: numeric(38,0)
+        description: "First day of month flag (1/0)."
+      - name: D_LAST_DOM
+        data_type: numeric(38,0)
+        description: "Last day of month flag (1/0)."
+      - name: D_SAME_DAY_LY
+        data_type: numeric(38,0)
+        description: "Same day last year flag (1/0)."
+      - name: D_SAME_DAY_LQ
+        data_type: numeric(38,0)
+        description: "Same day last quarter flag (1/0)."
+      - name: D_CURRENT_DAY
+        data_type: string
+        description: "Current day indicator (Y/N)."
+      - name: D_CURRENT_WEEK
+        data_type: string
+        description: "Current week indicator (Y/N)."
+      - name: D_CURRENT_MONTH
+        data_type: string
+        description: "Current month indicator (Y/N)."
+      - name: D_CURRENT_QUARTER
+        data_type: string
+        description: "Current quarter indicator (Y/N)."
+      - name: D_CURRENT_YEAR
+        data_type: string
+        description: "Current year indicator (Y/N)."
+      - "{{ var('bronze_layer_ddl')['hash_key_column'] }}"
+      - "{{ var('common_ddl')['etl_created_ts_column'] }}"
+      - "{{ var('common_ddl')['etl_updated_ts_column'] }}"
+      - "{{ var('common_ddl')['updated_by_column'] }}"
+      - "{{ var('common_ddl')['update_notes_column'] }}"

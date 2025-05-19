@@ -1,0 +1,115 @@
+
+version: 2
+
+macros:
+  - name: check_test_vetinsight_us_consultation
+    description: "Checks if a record is associated with a test VetInsight consultation ID"
+    arguments:
+      - name: col
+        description: "Name of column with the VetInsight consultation ID to check – e.g. 'consultation_id'"
+        type: string
+
+  - name: check_test_vetinsight_uk_consultation
+    description: "Checks if a record is associated with a test VetInsight UK consultation ID"
+    arguments:
+      - name: col
+        description: "Name of column with the VetInsight UK consultation ID to check – e.g. 'consultation_id'"
+        type: string
+
+  - name: check_test_vetinsight_uk_conversation
+    description: "Checks if a record is associated with a test VetInsight UK conversation ID"
+    arguments:
+      - name: col
+        description: "Name of column with the VetInsight UK conversation ID to check – e.g. 'conversation_id'"
+        type: string
+
+  - name: check_test_vetinsight_us_external_pet
+    description: "Checks if a given VetInsight pet ID matches a test based on its external ID"
+    arguments:
+      - name: col
+        description: "Name of column with the VetInsight pet ID to check – e.g. 'vetinsight_pet_id'"
+        type: string
+
+  - name: check_test_vetinsight_uk_external_pet
+    description: "Checks if a given VetInsight pet ID matches a test based on its external ID"
+    arguments:
+      - name: col
+        description: "Name of column with the VetInsight UK pet ID to check – e.g. 'vetinsight_pet_id'"
+        type: string
+
+  - name: check_test_vetinsight_us_external_user
+    description: "Checks if a given VetInsight user ID matches a test based on its external ID"
+    arguments:
+      - name: col
+        description: "Name of column with the VetInsight user ID to check – e.g. 'vetinsight_user_id'"
+        type: string
+
+  - name: check_test_vetinsight_uk_external_user
+    description: "Checks if a given VetInsight UK user ID matches a test based on its external ID"
+    arguments:
+      - name: col
+        description: "Name of column with the VetInsight UK user ID to check – e.g. 'vetinsight_user_id'"
+        type: string
+
+  - name: check_test_vetinsight_uk_partner
+    description: "Macro to identify test records based on VetInsight UK partner ID"
+    arguments:
+      - name: col
+        description: "The column containing the VetInsight UK partner ID"
+        type: string
+
+  - name: check_test_vetinsight_us_pet
+    description: "Macro to identify test records based on VetInsight pet ID"
+    arguments:
+      - name: col
+        description: "The column containing the VetInsight pet ID"
+        type: string
+
+  - name: check_test_vetinsight_uk_pet
+    description: "Macro to identify test records based on VetInsight UK pet ID"
+    arguments:
+      - name: col
+        description: "The column containing the VetInsight UK pet ID"
+        type: string
+
+  - name: check_test_vetinsight_uk_practice
+    description: "Macro to identify test records based on VetInsight UK practice ID"
+    arguments:
+      - name: col
+        description: "The column containing the VetInsight UK practice ID"
+        type: string
+
+  - name: check_test_vetinsight_uk_practice_group
+    description: "Macro to identify test records based on VetInsight UK practice group ID"
+    arguments:
+      - name: col
+        description: "The column containing the VetInsight UK practice group ID"
+        type: string
+
+  - name: check_test_vetinsight_us_tags
+    description: "Checks if a given VetInsight tag ID matches a test tag record"
+    arguments:
+      - name: col
+        description: "Name of column with the VetInsight tag ID to check – e.g. 'tag_id'"
+        type: string
+
+  - name: check_test_vetinsight_uk_tags
+    description: "Checks if a given VetInsight UK tag ID matches a test tag record"
+    arguments:
+      - name: col
+        description: "Name of column with the VetInsight UK tag ID to check – e.g. 'tag_id'"
+        type: string
+
+  - name: check_test_vetinsight_us_user
+    description: "Checks if a user ID is associated with a test VetInsight user ID"
+    arguments:
+      - name: col
+        description: "Name of column with the VetInsight user ID to check – e.g. 'vetinsight_user_id'"
+        type: string
+
+  - name: check_test_vetinsight_uk_user
+    description: "Checks if a user ID is associated with a test VetInsight UK user ID"
+    arguments:
+      - name: col
+        description: "Name of column with the VetInsight UK user ID to check – e.g. 'vetinsight_uk_user_id'"
+        type: string

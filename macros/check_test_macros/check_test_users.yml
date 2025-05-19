@@ -1,0 +1,17 @@
+
+version: 2
+
+macros:
+  - name: check_test_kinship_user
+    description: "Checks if a user ID is associated with a test Kinship user ID"
+    arguments:
+      - name: col
+        description: "Name of column with the Kinship user ID to check – e.g. 'kinship_user_id'"
+        type: string
+
+  - name: check_test_the_wildest_user
+    description: "Checks if a user ID is associated with a test The Wildest user ID"
+    arguments:
+      - name: col
+        description: "Name of column with The Wildest user ID to check – e.g. 'legacy_the_wildest_user_id'"
+        type: string

@@ -1,0 +1,19 @@
+version: 2
+
+macros:
+  - name: apply_date_filters
+    description: "This macro defines and conditionally applies a date window on to the model"
+    arguments:
+      - name: date_col
+        type: string
+        description: "Name of the column to apply the date filters to"
+      - name: lookback_days_start
+        type: integer
+        description: >
+          When not supplied, incremental runs will use the value of the supplied date_col 
+          in the model (already materialized) to determine the starting point for the lookback period. 
+          Supply an integer if to specify a fixed number of days as the starting point for the lookback period.
+          i.e. 7 to process data from 7 days go
+      - name: lookback_days_end
+        type: integer
+        description: The is the end point for the lookback period. i.e. 2 to process data that is at least 2 days old

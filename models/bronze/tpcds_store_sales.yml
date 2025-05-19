@@ -1,0 +1,80 @@
+version: 2
+
+models:
+  - name: tpcds_store_sales
+    description: "TPCDS store sales fact table containing transactional sales data from physical stores."
+    columns:
+      - name: SS_SOLD_DATE_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the date the sale occurred."
+      - name: SS_SOLD_TIME_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the time the sale occurred."
+      - name: SS_ITEM_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the item sold."
+      - name: SS_CUSTOMER_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the purchasing customer."
+      - name: SS_CDEMO_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for customer demographics."
+      - name: SS_HDEMO_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for household demographics."
+      - name: SS_ADDR_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for customer address."
+      - name: SS_STORE_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the store location."
+      - name: SS_PROMO_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for applied promotion."
+      - name: SS_TICKET_NUMBER
+        data_type: numeric(38,0)
+        description: "Unique identifier for the sales transaction."
+      - name: SS_QUANTITY
+        data_type: numeric(38,0)
+        description: "Quantity of items sold."
+      - name: SS_WHOLESALE_COST
+        data_type: numeric(7,2)
+        description: "Wholesale cost per unit."
+      - name: SS_LIST_PRICE
+        data_type: numeric(7,2)
+        description: "List price per unit."
+      - name: SS_SALES_PRICE
+        data_type: numeric(7,2)
+        description: "Actual sales price per unit."
+      - name: SS_EXT_DISCOUNT_AMT
+        data_type: numeric(7,2)
+        description: "Extended discount amount."
+      - name: SS_EXT_SALES_PRICE
+        data_type: numeric(7,2)
+        description: "Extended sales price."
+      - name: SS_EXT_WHOLESALE_COST
+        data_type: numeric(7,2)
+        description: "Extended wholesale cost."
+      - name: SS_EXT_LIST_PRICE
+        data_type: numeric(7,2)
+        description: "Extended list price."
+      - name: SS_EXT_TAX
+        data_type: numeric(7,2)
+        description: "Extended tax amount."
+      - name: SS_COUPON_AMT
+        data_type: numeric(7,2)
+        description: "Coupon discount amount."
+      - name: SS_NET_PAID
+        data_type: numeric(7,2)
+        description: "Net amount paid."
+      - name: SS_NET_PAID_INC_TAX
+        data_type: numeric(7,2)
+        description: "Net amount paid including tax."
+      - name: SS_NET_PROFIT
+        data_type: numeric(7,2)
+        description: "Net profit from the sale."
+      - "{{ var('bronze_layer_ddl')['hash_key_column'] }}"
+      - "{{ var('common_ddl')['etl_created_ts_column'] }}"
+      - "{{ var('common_ddl')['etl_updated_ts_column'] }}"
+      - "{{ var('common_ddl')['updated_by_column'] }}"
+      - "{{ var('common_ddl')['update_notes_column'] }}"

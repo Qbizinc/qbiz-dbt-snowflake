@@ -1,0 +1,13 @@
+
+version: 2
+
+macros:
+  - name: ga4_create_copper_model
+    description: "This macro generates the SQL to produce a Copper Layer table for the specified GA4 source."
+    arguments:
+      - name: src
+        type: source
+        description: "The GA4 source to be ingested to the Copper Layer"
+      - name: lookback_days
+        type: integer
+        description: "Specifies the ingestion window in days (from today) in case the build is not a full-refresh"

@@ -1,0 +1,1573 @@
+[0m17:30:14.440750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa14cae2290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa14cae0090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa14cac1450>]}
+
+
+============================== 17:30:14.446682 | a55a5d8a-2930-4683-885b-d0b5154551b0 ==============================
+[0m17:30:14.446682 [info ] [MainThread]: Running with dbt=1.9.0
+[0m17:30:14.447605 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/usr/app/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt ls', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:30:14.458297 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'SNOWFLAKE_ACCOUNT'
+[0m17:30:14.459946 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": false, "command_wall_clock_time": 0.2024711, "process_in_blocks": "664", "process_kernel_time": 0.159477, "process_mem_max_rss": "89212", "process_out_blocks": "1584", "process_user_time": 1.063181}
+[0m17:30:14.460701 [debug] [MainThread]: Command `dbt ls` failed at 17:30:14.460608 after 0.20 seconds
+[0m17:30:14.461311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa14cab1610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa14cab3150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1503d90d0>]}
+[0m17:30:14.461970 [debug] [MainThread]: Flushing usage events
+[0m17:30:14.815151 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:31:03.465261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f96a92ea090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f96a92aa990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f96a92fb950>]}
+
+
+============================== 17:31:03.470107 | 6d256d18-0223-46cc-8a6b-17d737af1971 ==============================
+[0m17:31:03.470107 [info ] [MainThread]: Running with dbt=1.9.0
+[0m17:31:03.471005 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/usr/app/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt ls', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:31:03.477480 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'SNOWFLAKE_ACCOUNT'
+[0m17:31:03.478571 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": false, "command_wall_clock_time": 0.06281731, "process_in_blocks": "0", "process_kernel_time": 0.151291, "process_mem_max_rss": "89268", "process_out_blocks": "1584", "process_user_time": 1.048237}
+[0m17:31:03.479441 [debug] [MainThread]: Command `dbt ls` failed at 17:31:03.479350 after 0.06 seconds
+[0m17:31:03.480068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f96a92c2c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f96a93b8610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f96acc38f90>]}
+[0m17:31:03.480809 [debug] [MainThread]: Flushing usage events
+[0m17:31:03.848354 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:30:12.445990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a9600f7a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a945d0ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a94623aa0>]}
+
+
+============================== 15:30:12.463546 | 93922a90-df56-49df-bdf9-8228e332f950 ==============================
+[0m15:30:12.463546 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:30:12.464588 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main', 'debug': 'False', 'warn_error': 'None', 'log_path': '/mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:30:15.266799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '93922a90-df56-49df-bdf9-8228e332f950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a92528c80>]}
+[0m15:30:15.307479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '93922a90-df56-49df-bdf9-8228e332f950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a92351a90>]}
+[0m15:30:15.315205 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m15:30:21.959021 [debug] [MainThread]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m15:30:21.965086 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:30:21.965976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '93922a90-df56-49df-bdf9-8228e332f950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a923a6240>]}
+[0m15:30:24.409154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '93922a90-df56-49df-bdf9-8228e332f950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a93988710>]}
+[0m15:30:24.452802 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/target/manifest.json
+[0m15:30:24.461522 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/target/semantic_manifest.json
+[0m15:30:24.616672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '93922a90-df56-49df-bdf9-8228e332f950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a91e11760>]}
+[0m15:30:24.617433 [info ] [MainThread]: Found 1 model, 476 macros
+[0m15:30:24.618284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '93922a90-df56-49df-bdf9-8228e332f950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a91e45010>]}
+[0m15:30:24.683187 [info ] [MainThread]: 
+[0m15:30:24.684354 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:30:24.685062 [info ] [MainThread]: 
+[0m15:30:24.685878 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:30:24.687138 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SANDBOX_DATA_PIPELINE'
+[0m15:30:26.393894 [debug] [ThreadPool]: Using snowflake connection "list_SANDBOX_DATA_PIPELINE"
+[0m15:30:26.394858 [debug] [ThreadPool]: On list_SANDBOX_DATA_PIPELINE: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "poc_dbt_snowflake", "target_name": "dev", "connection_name": "list_SANDBOX_DATA_PIPELINE"} */
+show terse schemas in database SANDBOX_DATA_PIPELINE
+    limit 10000
+[0m15:30:26.395540 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:30:27.406030 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "poc_dbt_snowflake", "target_name": "dev", "connection_name": "list_SANDBOX_DATA_PIPELINE"} */
+show terse schemas in database SANDBOX_DATA_PIPELINE
+    limit 10000
+[0m15:30:27.406954 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m15:30:27.407872 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m15:30:27.408553 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m15:30:27.409598 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:30:27.410332 [debug] [MainThread]: Connection 'list_SANDBOX_DATA_PIPELINE' was left open.
+[0m15:30:27.411014 [debug] [MainThread]: On list_SANDBOX_DATA_PIPELINE: No close available on handle
+[0m15:30:27.411660 [info ] [MainThread]: 
+[0m15:30:27.412536 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 2.73 seconds (2.73s).
+[0m15:30:27.413293 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "SANDBOX_DATA_PIPELINE"
+  Database Error
+    250001 (08001): Failed to connect to DB: A4877751795961-QBIZ-PARTNER.snowflakecomputing.com:443. Role 'ACCOUNTADMIN' specified in the connect string is not granted to this user. Contact your local system administrator, or attempt to login with another role, e.g. PUBLIC.
+[0m15:30:27.415570 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 15.047133, "process_in_blocks": "29704", "process_kernel_time": 1.594259, "process_mem_max_rss": "142092", "process_out_blocks": "2424", "process_user_time": 2.657099}
+[0m15:30:27.416254 [debug] [MainThread]: Command `dbt run` failed at 15:30:27.416172 after 15.05 seconds
+[0m15:30:27.416941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a93a650a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a91e36b40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a91e125a0>]}
+[0m15:30:27.417658 [debug] [MainThread]: Flushing usage events
+[0m15:30:27.833787 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:45:30.999560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2f700dd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2f6931fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2f69c7da0>]}
+
+
+============================== 09:45:31.012570 | 852abb9e-c0ed-4d7a-aa1e-36ffb6d87d14 ==============================
+[0m09:45:31.012570 [info ] [MainThread]: Running with dbt=1.9.4
+[0m09:45:31.013591 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/logs', 'profiles_dir': '/mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:45:35.473291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '852abb9e-c0ed-4d7a-aa1e-36ffb6d87d14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2f4fe83b0>]}
+[0m09:45:35.513784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '852abb9e-c0ed-4d7a-aa1e-36ffb6d87d14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2f718bb90>]}
+[0m09:45:35.521947 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m09:45:42.400234 [debug] [MainThread]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m09:45:42.456049 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m09:45:42.457146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '852abb9e-c0ed-4d7a-aa1e-36ffb6d87d14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2f5555fa0>]}
+[0m09:45:45.083701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '852abb9e-c0ed-4d7a-aa1e-36ffb6d87d14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2ddb44b60>]}
+[0m09:45:45.128456 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/target/manifest.json
+[0m09:45:45.136943 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/target/semantic_manifest.json
+[0m09:45:45.428543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '852abb9e-c0ed-4d7a-aa1e-36ffb6d87d14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2ddb47380>]}
+[0m09:45:45.429346 [info ] [MainThread]: Found 1 model, 476 macros
+[0m09:45:45.430279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '852abb9e-c0ed-4d7a-aa1e-36ffb6d87d14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2f4bcbcb0>]}
+[0m09:45:45.431949 [info ] [MainThread]: 
+[0m09:45:45.432710 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:45:45.433414 [info ] [MainThread]: 
+[0m09:45:45.434250 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m09:45:45.435650 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SANDBOX_DATA_PIPELINE'
+[0m09:45:47.999716 [debug] [ThreadPool]: Using snowflake connection "list_SANDBOX_DATA_PIPELINE"
+[0m09:45:48.000549 [debug] [ThreadPool]: On list_SANDBOX_DATA_PIPELINE: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "poc_dbt_snowflake", "target_name": "dev", "connection_name": "list_SANDBOX_DATA_PIPELINE"} */
+show terse schemas in database SANDBOX_DATA_PIPELINE
+    limit 10000
+[0m09:45:48.001288 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:45:49.049917 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.049 seconds
+[0m09:45:49.052482 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_SANDBOX_DATA_PIPELINE, now list_SANDBOX_DATA_PIPELINE_PUBLIC)
+[0m09:45:49.060147 [debug] [ThreadPool]: Using snowflake connection "list_SANDBOX_DATA_PIPELINE_PUBLIC"
+[0m09:45:49.060858 [debug] [ThreadPool]: On list_SANDBOX_DATA_PIPELINE_PUBLIC: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "poc_dbt_snowflake", "target_name": "dev", "connection_name": "list_SANDBOX_DATA_PIPELINE_PUBLIC"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m09:45:49.151652 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.090 seconds
+[0m09:45:49.154904 [debug] [ThreadPool]: Using snowflake connection "list_SANDBOX_DATA_PIPELINE_PUBLIC"
+[0m09:45:49.155523 [debug] [ThreadPool]: On list_SANDBOX_DATA_PIPELINE_PUBLIC: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "poc_dbt_snowflake", "target_name": "dev", "connection_name": "list_SANDBOX_DATA_PIPELINE_PUBLIC"} */
+show objects in SANDBOX_DATA_PIPELINE.PUBLIC
+    limit 10000
+    
+;
+[0m09:45:49.486027 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.330 seconds
+[0m09:45:49.487995 [debug] [ThreadPool]: Using snowflake connection "list_SANDBOX_DATA_PIPELINE_PUBLIC"
+[0m09:45:49.488678 [debug] [ThreadPool]: On list_SANDBOX_DATA_PIPELINE_PUBLIC: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "poc_dbt_snowflake", "target_name": "dev", "connection_name": "list_SANDBOX_DATA_PIPELINE_PUBLIC"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m09:45:49.621662 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.132 seconds
+[0m09:45:49.623926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '852abb9e-c0ed-4d7a-aa1e-36ffb6d87d14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2f7d18620>]}
+[0m09:45:49.629497 [debug] [Thread-1 (]: Began running node model.poc_dbt_snowflake.unique_cocktails
+[0m09:45:49.630309 [info ] [Thread-1 (]: 1 of 1 START sql view model PUBLIC.unique_cocktails ............................ [RUN]
+[0m09:45:49.631097 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_SANDBOX_DATA_PIPELINE_PUBLIC, now model.poc_dbt_snowflake.unique_cocktails)
+[0m09:45:49.631896 [debug] [Thread-1 (]: Began compiling node model.poc_dbt_snowflake.unique_cocktails
+[0m09:45:49.636705 [debug] [Thread-1 (]: Writing injected SQL for node "model.poc_dbt_snowflake.unique_cocktails"
+[0m09:45:49.647869 [debug] [Thread-1 (]: Began executing node model.poc_dbt_snowflake.unique_cocktails
+[0m09:45:49.667425 [debug] [Thread-1 (]: Writing runtime sql for node "model.poc_dbt_snowflake.unique_cocktails"
+[0m09:45:49.701018 [debug] [Thread-1 (]: Using snowflake connection "model.poc_dbt_snowflake.unique_cocktails"
+[0m09:45:49.701691 [debug] [Thread-1 (]: On model.poc_dbt_snowflake.unique_cocktails: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "poc_dbt_snowflake", "target_name": "dev", "node_id": "model.poc_dbt_snowflake.unique_cocktails"} */
+create or replace   view SANDBOX_DATA_PIPELINE.PUBLIC.unique_cocktails
+  
+   as (
+    SELECT * FROM sandbox_data_pipeline.public.cocktails
+QUALIFY ROW_NUMBER() OVER (PARTITION BY drink_id ORDER BY run_hr DESC) = 1
+  );
+[0m09:45:49.975237 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bc36ed-0105-2e93-003c-128700b95f06
+[0m09:45:49.976092 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on schema 'PUBLIC'
+[0m09:45:49.993620 [debug] [Thread-1 (]: Database Error in model unique_cocktails (models/examples/unique_cocktails.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'PUBLIC'
+  compiled code at target/run/poc_dbt_snowflake/models/examples/unique_cocktails.sql
+[0m09:45:50.000553 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '852abb9e-c0ed-4d7a-aa1e-36ffb6d87d14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2f4b91ac0>]}
+[0m09:45:50.001446 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model PUBLIC.unique_cocktails ................... [[31mERROR[0m in 0.36s]
+[0m09:45:50.002577 [debug] [Thread-1 (]: Finished running node model.poc_dbt_snowflake.unique_cocktails
+[0m09:45:50.003407 [debug] [Thread-7 (]: Marking all children of 'model.poc_dbt_snowflake.unique_cocktails' to be skipped because of status 'error'.  Reason: Database Error in model unique_cocktails (models/examples/unique_cocktails.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'PUBLIC'
+  compiled code at target/run/poc_dbt_snowflake/models/examples/unique_cocktails.sql.
+[0m09:45:50.005721 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:45:50.006346 [debug] [MainThread]: Connection 'model.poc_dbt_snowflake.unique_cocktails' was left open.
+[0m09:45:50.006969 [debug] [MainThread]: On model.poc_dbt_snowflake.unique_cocktails: Close
+[0m09:45:50.710303 [info ] [MainThread]: 
+[0m09:45:50.711564 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 5.28 seconds (5.28s).
+[0m09:45:50.712675 [debug] [MainThread]: Command end result
+[0m09:45:50.736909 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/target/manifest.json
+[0m09:45:50.742109 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/target/semantic_manifest.json
+[0m09:45:50.748118 [debug] [MainThread]: Wrote artifact RunExecutionResult to /mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/target/run_results.json
+[0m09:45:50.748694 [info ] [MainThread]: 
+[0m09:45:50.749581 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m09:45:50.750266 [info ] [MainThread]: 
+[0m09:45:50.750971 [error] [MainThread]:   Database Error in model unique_cocktails (models/examples/unique_cocktails.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'PUBLIC'
+  compiled code at target/run/poc_dbt_snowflake/models/examples/unique_cocktails.sql
+[0m09:45:50.751580 [info ] [MainThread]: 
+[0m09:45:50.752219 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m09:45:50.754490 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 19.308886, "process_in_blocks": "36136", "process_kernel_time": 2.059755, "process_mem_max_rss": "142920", "process_out_blocks": "16", "process_user_time": 2.40142}
+[0m09:45:50.755203 [debug] [MainThread]: Command `dbt run` failed at 09:45:50.755123 after 19.31 seconds
+[0m09:45:50.755930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2f682d9a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2f713a840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2f6a31790>]}
+[0m09:45:50.756559 [debug] [MainThread]: Flushing usage events
+[0m09:45:51.203658 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:47:27.198010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5872e33590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5873538e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5872e32b70>]}
+
+
+============================== 09:47:27.205733 | 99d8ec73-d6d1-4dc6-9ebf-a6d3ff6a4286 ==============================
+[0m09:47:27.205733 [info ] [MainThread]: Running with dbt=1.9.4
+[0m09:47:27.206698 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/logs', 'version_check': 'True', 'profiles_dir': '/mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:47:29.902002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '99d8ec73-d6d1-4dc6-9ebf-a6d3ff6a4286', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f58714d5820>]}
+[0m09:47:29.943328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '99d8ec73-d6d1-4dc6-9ebf-a6d3ff6a4286', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f587340e210>]}
+[0m09:47:29.951316 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m09:47:36.200340 [debug] [MainThread]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m09:47:37.991955 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:47:37.992685 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:47:38.009366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '99d8ec73-d6d1-4dc6-9ebf-a6d3ff6a4286', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f587116fd70>]}
+[0m09:47:38.053734 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/target/manifest.json
+[0m09:47:38.061330 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/target/semantic_manifest.json
+[0m09:47:38.213577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '99d8ec73-d6d1-4dc6-9ebf-a6d3ff6a4286', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5870ef73e0>]}
+[0m09:47:38.214337 [info ] [MainThread]: Found 1 model, 476 macros
+[0m09:47:38.215172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '99d8ec73-d6d1-4dc6-9ebf-a6d3ff6a4286', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5870f92870>]}
+[0m09:47:38.216644 [info ] [MainThread]: 
+[0m09:47:38.217285 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:47:38.217886 [info ] [MainThread]: 
+[0m09:47:38.218651 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m09:47:38.219858 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SANDBOX_DATA_PIPELINE'
+[0m09:47:40.003519 [debug] [ThreadPool]: Using snowflake connection "list_SANDBOX_DATA_PIPELINE"
+[0m09:47:40.004301 [debug] [ThreadPool]: On list_SANDBOX_DATA_PIPELINE: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "poc_dbt_snowflake", "target_name": "dev", "connection_name": "list_SANDBOX_DATA_PIPELINE"} */
+show terse schemas in database SANDBOX_DATA_PIPELINE
+    limit 10000
+[0m09:47:40.005012 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:47:40.671138 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.666 seconds
+[0m09:47:40.673930 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_SANDBOX_DATA_PIPELINE, now list_SANDBOX_DATA_PIPELINE_PUBLIC)
+[0m09:47:40.682028 [debug] [ThreadPool]: Using snowflake connection "list_SANDBOX_DATA_PIPELINE_PUBLIC"
+[0m09:47:40.682671 [debug] [ThreadPool]: On list_SANDBOX_DATA_PIPELINE_PUBLIC: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "poc_dbt_snowflake", "target_name": "dev", "connection_name": "list_SANDBOX_DATA_PIPELINE_PUBLIC"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m09:47:40.790511 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.107 seconds
+[0m09:47:40.793702 [debug] [ThreadPool]: Using snowflake connection "list_SANDBOX_DATA_PIPELINE_PUBLIC"
+[0m09:47:40.794364 [debug] [ThreadPool]: On list_SANDBOX_DATA_PIPELINE_PUBLIC: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "poc_dbt_snowflake", "target_name": "dev", "connection_name": "list_SANDBOX_DATA_PIPELINE_PUBLIC"} */
+show objects in SANDBOX_DATA_PIPELINE.PUBLIC
+    limit 10000
+    
+;
+[0m09:47:40.934805 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.140 seconds
+[0m09:47:40.936797 [debug] [ThreadPool]: Using snowflake connection "list_SANDBOX_DATA_PIPELINE_PUBLIC"
+[0m09:47:40.937531 [debug] [ThreadPool]: On list_SANDBOX_DATA_PIPELINE_PUBLIC: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "poc_dbt_snowflake", "target_name": "dev", "connection_name": "list_SANDBOX_DATA_PIPELINE_PUBLIC"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m09:47:41.042837 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.105 seconds
+[0m09:47:41.045042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '99d8ec73-d6d1-4dc6-9ebf-a6d3ff6a4286', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f58711c2810>]}
+[0m09:47:41.049627 [debug] [Thread-1 (]: Began running node model.poc_dbt_snowflake.unique_cocktails
+[0m09:47:41.050534 [info ] [Thread-1 (]: 1 of 1 START sql view model PUBLIC.unique_cocktails ............................ [RUN]
+[0m09:47:41.051495 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_SANDBOX_DATA_PIPELINE_PUBLIC, now model.poc_dbt_snowflake.unique_cocktails)
+[0m09:47:41.052135 [debug] [Thread-1 (]: Began compiling node model.poc_dbt_snowflake.unique_cocktails
+[0m09:47:41.056763 [debug] [Thread-1 (]: Writing injected SQL for node "model.poc_dbt_snowflake.unique_cocktails"
+[0m09:47:41.062294 [debug] [Thread-1 (]: Began executing node model.poc_dbt_snowflake.unique_cocktails
+[0m09:47:41.082996 [debug] [Thread-1 (]: Writing runtime sql for node "model.poc_dbt_snowflake.unique_cocktails"
+[0m09:47:41.088289 [debug] [Thread-1 (]: Using snowflake connection "model.poc_dbt_snowflake.unique_cocktails"
+[0m09:47:41.088915 [debug] [Thread-1 (]: On model.poc_dbt_snowflake.unique_cocktails: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "poc_dbt_snowflake", "target_name": "dev", "node_id": "model.poc_dbt_snowflake.unique_cocktails"} */
+create or replace   view SANDBOX_DATA_PIPELINE.PUBLIC.unique_cocktails
+  
+   as (
+    SELECT * FROM sandbox_data_pipeline.public.cocktails
+QUALIFY ROW_NUMBER() OVER (PARTITION BY drink_id ORDER BY run_hr DESC) = 1
+  );
+[0m09:47:41.234964 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bc36ef-0105-32a8-003c-128700b9a1de
+[0m09:47:41.235731 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on schema 'PUBLIC'
+[0m09:47:41.251256 [debug] [Thread-1 (]: Database Error in model unique_cocktails (models/examples/unique_cocktails.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'PUBLIC'
+  compiled code at target/run/poc_dbt_snowflake/models/examples/unique_cocktails.sql
+[0m09:47:41.257558 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '99d8ec73-d6d1-4dc6-9ebf-a6d3ff6a4286', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f58711dd2b0>]}
+[0m09:47:41.258409 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model PUBLIC.unique_cocktails ................... [[31mERROR[0m in 0.20s]
+[0m09:47:41.259564 [debug] [Thread-1 (]: Finished running node model.poc_dbt_snowflake.unique_cocktails
+[0m09:47:41.260374 [debug] [Thread-7 (]: Marking all children of 'model.poc_dbt_snowflake.unique_cocktails' to be skipped because of status 'error'.  Reason: Database Error in model unique_cocktails (models/examples/unique_cocktails.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'PUBLIC'
+  compiled code at target/run/poc_dbt_snowflake/models/examples/unique_cocktails.sql.
+[0m09:47:41.262593 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:47:41.263193 [debug] [MainThread]: Connection 'model.poc_dbt_snowflake.unique_cocktails' was left open.
+[0m09:47:41.263786 [debug] [MainThread]: On model.poc_dbt_snowflake.unique_cocktails: Close
+[0m09:47:41.411460 [info ] [MainThread]: 
+[0m09:47:41.412622 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.19 seconds (3.19s).
+[0m09:47:41.413809 [debug] [MainThread]: Command end result
+[0m09:47:41.437047 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/target/manifest.json
+[0m09:47:41.442589 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/target/semantic_manifest.json
+[0m09:47:41.448812 [debug] [MainThread]: Wrote artifact RunExecutionResult to /mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/target/run_results.json
+[0m09:47:41.449474 [info ] [MainThread]: 
+[0m09:47:41.450174 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m09:47:41.450805 [info ] [MainThread]: 
+[0m09:47:41.451481 [error] [MainThread]:   Database Error in model unique_cocktails (models/examples/unique_cocktails.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'PUBLIC'
+  compiled code at target/run/poc_dbt_snowflake/models/examples/unique_cocktails.sql
+[0m09:47:41.452197 [info ] [MainThread]: 
+[0m09:47:41.452862 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m09:47:41.454788 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 14.305354, "process_in_blocks": "28312", "process_kernel_time": 1.820284, "process_mem_max_rss": "137320", "process_out_blocks": "16", "process_user_time": 1.649632}
+[0m09:47:41.455449 [debug] [MainThread]: Command `dbt run` failed at 09:47:41.455370 after 14.31 seconds
+[0m09:47:41.456085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5872d31c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f58742931d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f58712de060>]}
+[0m09:47:41.456703 [debug] [MainThread]: Flushing usage events
+[0m09:47:41.918178 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:48:54.650939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa918db47d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa91717db80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa91874db80>]}
+
+
+============================== 09:48:54.658102 | cf27bd87-0fae-4a2f-b6fa-71b15deb4104 ==============================
+[0m09:48:54.658102 [info ] [MainThread]: Running with dbt=1.9.4
+[0m09:48:54.659250 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:48:57.438481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cf27bd87-0fae-4a2f-b6fa-71b15deb4104', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa917128e90>]}
+[0m09:48:57.481173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cf27bd87-0fae-4a2f-b6fa-71b15deb4104', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa918ff9370>]}
+[0m09:48:57.489317 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m09:49:04.014233 [debug] [MainThread]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m09:49:05.846611 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:49:05.847411 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:49:05.864270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cf27bd87-0fae-4a2f-b6fa-71b15deb4104', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa914f77b30>]}
+[0m09:49:05.909201 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/target/manifest.json
+[0m09:49:05.917240 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/target/semantic_manifest.json
+[0m09:49:06.080766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cf27bd87-0fae-4a2f-b6fa-71b15deb4104', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa914cf1820>]}
+[0m09:49:06.081577 [info ] [MainThread]: Found 1 model, 476 macros
+[0m09:49:06.082478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cf27bd87-0fae-4a2f-b6fa-71b15deb4104', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa914f771d0>]}
+[0m09:49:06.084066 [info ] [MainThread]: 
+[0m09:49:06.084773 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:49:06.085496 [info ] [MainThread]: 
+[0m09:49:06.086306 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m09:49:06.087537 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SANDBOX_DATA_PIPELINE'
+[0m09:49:07.885804 [debug] [ThreadPool]: Using snowflake connection "list_SANDBOX_DATA_PIPELINE"
+[0m09:49:07.886576 [debug] [ThreadPool]: On list_SANDBOX_DATA_PIPELINE: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "poc_dbt_snowflake", "target_name": "dev", "connection_name": "list_SANDBOX_DATA_PIPELINE"} */
+show terse schemas in database SANDBOX_DATA_PIPELINE
+    limit 10000
+[0m09:49:07.887305 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:49:08.553756 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.666 seconds
+[0m09:49:08.556312 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_SANDBOX_DATA_PIPELINE, now list_SANDBOX_DATA_PIPELINE_PUBLIC)
+[0m09:49:08.564376 [debug] [ThreadPool]: Using snowflake connection "list_SANDBOX_DATA_PIPELINE_PUBLIC"
+[0m09:49:08.565031 [debug] [ThreadPool]: On list_SANDBOX_DATA_PIPELINE_PUBLIC: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "poc_dbt_snowflake", "target_name": "dev", "connection_name": "list_SANDBOX_DATA_PIPELINE_PUBLIC"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m09:49:08.691033 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.125 seconds
+[0m09:49:08.694472 [debug] [ThreadPool]: Using snowflake connection "list_SANDBOX_DATA_PIPELINE_PUBLIC"
+[0m09:49:08.695113 [debug] [ThreadPool]: On list_SANDBOX_DATA_PIPELINE_PUBLIC: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "poc_dbt_snowflake", "target_name": "dev", "connection_name": "list_SANDBOX_DATA_PIPELINE_PUBLIC"} */
+show objects in SANDBOX_DATA_PIPELINE.PUBLIC
+    limit 10000
+    
+;
+[0m09:49:08.813703 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.118 seconds
+[0m09:49:08.815460 [debug] [ThreadPool]: Using snowflake connection "list_SANDBOX_DATA_PIPELINE_PUBLIC"
+[0m09:49:08.816094 [debug] [ThreadPool]: On list_SANDBOX_DATA_PIPELINE_PUBLIC: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "poc_dbt_snowflake", "target_name": "dev", "connection_name": "list_SANDBOX_DATA_PIPELINE_PUBLIC"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m09:49:08.927305 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.110 seconds
+[0m09:49:08.930170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cf27bd87-0fae-4a2f-b6fa-71b15deb4104', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa90fe9f620>]}
+[0m09:49:08.934107 [debug] [Thread-1 (]: Began running node model.poc_dbt_snowflake.unique_cocktails
+[0m09:49:08.934906 [info ] [Thread-1 (]: 1 of 1 START sql view model PUBLIC.unique_cocktails ............................ [RUN]
+[0m09:49:08.935854 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_SANDBOX_DATA_PIPELINE_PUBLIC, now model.poc_dbt_snowflake.unique_cocktails)
+[0m09:49:08.936486 [debug] [Thread-1 (]: Began compiling node model.poc_dbt_snowflake.unique_cocktails
+[0m09:49:08.941002 [debug] [Thread-1 (]: Writing injected SQL for node "model.poc_dbt_snowflake.unique_cocktails"
+[0m09:49:08.946576 [debug] [Thread-1 (]: Began executing node model.poc_dbt_snowflake.unique_cocktails
+[0m09:49:08.968941 [debug] [Thread-1 (]: Writing runtime sql for node "model.poc_dbt_snowflake.unique_cocktails"
+[0m09:49:08.974820 [debug] [Thread-1 (]: Using snowflake connection "model.poc_dbt_snowflake.unique_cocktails"
+[0m09:49:08.975575 [debug] [Thread-1 (]: On model.poc_dbt_snowflake.unique_cocktails: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "poc_dbt_snowflake", "target_name": "dev", "node_id": "model.poc_dbt_snowflake.unique_cocktails"} */
+create or replace   view SANDBOX_DATA_PIPELINE.PUBLIC.unique_cocktails
+  
+   as (
+    SELECT * FROM sandbox_data_pipeline.public.cocktails
+QUALIFY ROW_NUMBER() OVER (PARTITION BY drink_id ORDER BY run_hr DESC) = 1
+  );
+[0m09:49:09.129302 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bc36f1-0105-32a8-003c-128700b9a1f6
+[0m09:49:09.130077 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on schema 'PUBLIC'
+[0m09:49:09.146330 [debug] [Thread-1 (]: Database Error in model unique_cocktails (models/examples/unique_cocktails.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'PUBLIC'
+  compiled code at target/run/poc_dbt_snowflake/models/examples/unique_cocktails.sql
+[0m09:49:09.152746 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cf27bd87-0fae-4a2f-b6fa-71b15deb4104', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa914f75d30>]}
+[0m09:49:09.153590 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model PUBLIC.unique_cocktails ................... [[31mERROR[0m in 0.21s]
+[0m09:49:09.154663 [debug] [Thread-1 (]: Finished running node model.poc_dbt_snowflake.unique_cocktails
+[0m09:49:09.155506 [debug] [Thread-7 (]: Marking all children of 'model.poc_dbt_snowflake.unique_cocktails' to be skipped because of status 'error'.  Reason: Database Error in model unique_cocktails (models/examples/unique_cocktails.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'PUBLIC'
+  compiled code at target/run/poc_dbt_snowflake/models/examples/unique_cocktails.sql.
+[0m09:49:09.157580 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:49:09.158182 [debug] [MainThread]: Connection 'model.poc_dbt_snowflake.unique_cocktails' was left open.
+[0m09:49:09.158774 [debug] [MainThread]: On model.poc_dbt_snowflake.unique_cocktails: Close
+[0m09:49:09.292068 [info ] [MainThread]: 
+[0m09:49:09.293191 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.21 seconds (3.21s).
+[0m09:49:09.294159 [debug] [MainThread]: Command end result
+[0m09:49:09.316168 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/target/manifest.json
+[0m09:49:09.321533 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/target/semantic_manifest.json
+[0m09:49:09.327595 [debug] [MainThread]: Wrote artifact RunExecutionResult to /mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/target/run_results.json
+[0m09:49:09.328235 [info ] [MainThread]: 
+[0m09:49:09.329106 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m09:49:09.329727 [info ] [MainThread]: 
+[0m09:49:09.330407 [error] [MainThread]:   Database Error in model unique_cocktails (models/examples/unique_cocktails.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'PUBLIC'
+  compiled code at target/run/poc_dbt_snowflake/models/examples/unique_cocktails.sql
+[0m09:49:09.331012 [info ] [MainThread]: 
+[0m09:49:09.331660 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m09:49:09.333676 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 14.728874, "process_in_blocks": "28312", "process_kernel_time": 1.700397, "process_mem_max_rss": "137472", "process_out_blocks": "16", "process_user_time": 1.658412}
+[0m09:49:09.334354 [debug] [MainThread]: Command `dbt run` failed at 09:49:09.334275 after 14.73 seconds
+[0m09:49:09.335034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa916aeff50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa9172f8a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa9172f9b80>]}
+[0m09:49:09.335681 [debug] [MainThread]: Flushing usage events
+[0m09:49:09.700411 [debug] [MainThread]: An error was encountered while trying to flush usage events
+
+
+============================== 15:20:45.818240 | 331cc264-17bf-4e5d-ba0e-d51a634a16b6 ==============================
+15:20:45.818240 [info ] [MainThread]: Running with dbt=1.9.4
+15:20:50.892948 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+15:20:57.562722 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+15:20:57.705395 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading poc_dbt_snowflake: bronze/tpcds_customer.yml - Runtime Error
+    Syntax error near line 47
+    ------------------------------
+    44 |             description: "Customer email address."
+    45 |           - name: c_last_review_date_sk
+    46 |             description: "Surrogate key for the last review date."
+    47 | 		  - "{{ var('bronze_layer_ddl')['hash_key_column'] }}"
+    48 | 		  - "{{ var('bronze_layer_ddl')['op_column'] }}"
+    49 | 		  - "{{ var('bronze_layer_ddl')['source_created_ts_column'] }}"
+    50 | 		  - "{{ var('bronze_layer_ddl')['test_flag_column'] }}"
+    
+    Raw Error:
+    ------------------------------
+    while scanning for the next token
+    found character that cannot start any token
+      in "<unicode string>", line 47, column 1
+
+
+============================== 15:22:34.583598 | b7300d2d-ba93-4860-b878-9a3db775db97 ==============================
+15:22:34.583598 [info ] [MainThread]: Running with dbt=1.9.4
+15:22:37.339712 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+15:22:43.723480 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+15:22:47.287804 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid sources config given in models/bronze/tpcds_customer.yml @ sources: {'name': 'tpcds', 'database': 'SANDBOX_DATA_PIPELINE', 'schema': 'bronze', 'tables': [{'name': 'tpcds_customer', 'description': 'TPCDS customer table containing customer demographic and account information.', 'columns': [{'name': 'c_customer_sk', 'description': 'Surrogate key for the customer.'}, {'name': 'c_customer_id', 'description': 'Business key for the customer.'}, {'name': 'c_current_cdemo_sk', 'description': 'Current customer demographic surrogate key.'}, {'name': 'c_current_hdemo_sk', 'description': 'Current household demographic surrogate key.'}, {'name': 'c_current_addr_sk', 'description': 'Current address surrogate key.'}, {'name': 'c_first_shipto_date_sk', 'description': 'Date of first shipment surrogate key.'}, {'name': 'c_first_sales_date_sk', 'description': 'Date of first sale surrogate key.'}, {'name': 'c_salutation', 'description': 'Customer salutation.'}, {'name': 'c_first_name', 'description': 'Customer first name.'}, {'name': 'c_last_name', 'description': 'Customer last name.'}, {'name': 'c_preferred_cust_flag', 'description': 'Preferred customer flag.'}, {'name': 'c_birth_day', 'description': 'Customer birth day.'}, {'name': 'c_birth_month', 'description': 'Customer birth month.'}, {'name': 'c_birth_year', 'description': 'Customer birth year.'}, {'name': 'c_birth_country', 'description': 'Customer birth country.'}, {'name': 'c_login', 'description': 'Customer login name.'}, {'name': 'c_email_address', 'description': 'Customer email address.'}, {'name': 'c_last_review_date_sk', 'description': 'Surrogate key for the last review date.'}, {'name': 'hash_key', 'description': 'Unique identifier of Bronze Layer entry', 'data_type': 'string', 'data_tests': ['not_null', 'unique']}, Undefined, {'name': 'source_created_ts', 'description': 'UTC timestamp when the record was created in the source table', 'data_type': 'timestamp'}, {'name': 'is_test', 'description': 'Flag of whether the record is considered a test record', 'data_type': 'boolean'}, Undefined, {'name': 'etl_created_ts', 'description': 'UTC timestamp when the Bronze Layer record was created', 'data_type': 'timestamp', 'data_tests': ['not_null']}, {'name': 'etl_updated_ts', 'description': 'UTC timestamp when the Bronze Layer record was last updated', 'data_type': 'timestamp', 'data_tests': ['not_null']}, {'name': 'update_notes', 'description': 'Additional notes on the update', 'data_type': 'string'}, {'name': 'updated_by', 'description': 'User who last updated the record', 'data_type': 'string', 'data_tests': ['not_null']}]}]} - at path ['tables'][0]['columns'][19]: Undefined is not of type 'object'
+
+
+============================== 15:47:18.907818 | f1b55e4d-500c-4f2b-a2c3-3300e6e635c5 ==============================
+15:47:18.907818 [info ] [MainThread]: Running with dbt=1.9.4
+15:47:21.921492 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+15:47:28.521498 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+15:47:28.522799 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+15:47:33.492890 [error] [MainThread]: Encountered an error:
+Compilation Error in model tpcds_customer (models/bronze/tpcds_customer.sql)
+  expected token ',', got 'string'
+    line 3
+      materialized='table'  -- or 'incremental' if you want to use incremental loading
+
+
+============================== 15:49:29.787395 | 551265fd-57cf-4660-b514-903badc8929a ==============================
+15:49:29.787395 [info ] [MainThread]: Running with dbt=1.9.4
+15:49:32.725691 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+15:49:39.868719 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+15:49:39.870086 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+15:49:44.968725 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid sources config given in models/bronze/tpcds_customer.yml @ sources: {'name': 'tpcds', 'database': 'SANDBOX_DATA_PIPELINE', 'schema': 'bronze', 'tables': [{'name': 'tpcds_customer', 'description': 'TPCDS customer table containing customer demographic and account information.', 'columns': [{'name': 'c_customer_sk', 'description': 'Surrogate key for the customer.'}, {'name': 'c_customer_id', 'description': 'Business key for the customer.'}, {'name': 'c_current_cdemo_sk', 'description': 'Current customer demographic surrogate key.'}, {'name': 'c_current_hdemo_sk', 'description': 'Current household demographic surrogate key.'}, {'name': 'c_current_addr_sk', 'description': 'Current address surrogate key.'}, {'name': 'c_first_shipto_date_sk', 'description': 'Date of first shipment surrogate key.'}, {'name': 'c_first_sales_date_sk', 'description': 'Date of first sale surrogate key.'}, {'name': 'c_salutation', 'description': 'Customer salutation.'}, {'name': 'c_first_name', 'description': 'Customer first name.'}, {'name': 'c_last_name', 'description': 'Customer last name.'}, {'name': 'c_preferred_cust_flag', 'description': 'Preferred customer flag.'}, {'name': 'c_birth_day', 'description': 'Customer birth day.'}, {'name': 'c_birth_month', 'description': 'Customer birth month.'}, {'name': 'c_birth_year', 'description': 'Customer birth year.'}, {'name': 'c_birth_country', 'description': 'Customer birth country.'}, {'name': 'c_login', 'description': 'Customer login name.'}, {'name': 'c_email_address', 'description': 'Customer email address.'}, {'name': 'c_last_review_date_sk', 'description': 'Surrogate key for the last review date.'}, {'name': 'hash_key', 'description': 'Unique identifier of Bronze Layer entry', 'data_type': 'string', 'data_tests': ['not_null', 'unique']}, Undefined, {'name': 'source_created_ts', 'description': 'UTC timestamp when the record was created in the source table', 'data_type': 'timestamp'}, {'name': 'is_test', 'description': 'Flag of whether the record is considered a test record', 'data_type': 'boolean'}, Undefined, {'name': 'etl_created_ts', 'description': 'UTC timestamp when the Bronze Layer record was created', 'data_type': 'timestamp', 'data_tests': ['not_null']}, {'name': 'etl_updated_ts', 'description': 'UTC timestamp when the Bronze Layer record was last updated', 'data_type': 'timestamp', 'data_tests': ['not_null']}, {'name': 'update_notes', 'description': 'Additional notes on the update', 'data_type': 'string'}, {'name': 'updated_by', 'description': 'User who last updated the record', 'data_type': 'string', 'data_tests': ['not_null']}]}]} - at path ['tables'][0]['columns'][19]: Undefined is not of type 'object'
+
+
+============================== 15:51:43.819387 | 89a389a3-65de-4297-9ff2-06f5a694d8d8 ==============================
+15:51:43.819387 [info ] [MainThread]: Running with dbt=1.9.4
+15:51:46.573144 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+15:51:52.971385 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+15:51:52.972476 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+15:51:58.739317 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 8 unused configuration paths:
+- models.dev.silver_dim
+- models.dev.gold
+- models.dev.tests
+- models.dev.silver_pii
+- models.dev.silver_fact
+- models.dev.lookup_tables
+- models.dev.bronze
+- seeds.qbiz
+15:51:59.213464 [info ] [MainThread]: Found 2 models, 5 data tests, 7 sources, 851 macros
+15:51:59.215641 [info ] [MainThread]: 
+15:51:59.216344 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+15:51:59.217090 [info ] [MainThread]: 
+15:52:06.254404 [info ] [Thread-1 (]: 1 of 2 START sql view model PUBLIC.tpcds_customer .............................. [RUN]
+15:52:06.255037 [info ] [Thread-2 (]: 2 of 2 START sql view model PUBLIC.unique_cocktails ............................ [RUN]
+15:52:06.471155 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model PUBLIC.tpcds_customer ..................... [[31mERROR[0m in 0.21s]
+15:52:06.804526 [error] [Thread-2 (]: 2 of 2 ERROR creating sql view model PUBLIC.unique_cocktails ................... [[31mERROR[0m in 0.54s]
+15:52:07.055600 [info ] [MainThread]: 
+15:52:07.056737 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 7.84 seconds (7.84s).
+15:52:07.108635 [info ] [MainThread]: 
+15:52:07.109520 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+15:52:07.110246 [info ] [MainThread]: 
+15:52:07.110968 [error] [MainThread]:   Database Error in model tpcds_customer (models/bronze/tpcds_customer.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'PUBLIC'
+  compiled code at target/run/poc_dbt_snowflake/models/bronze/tpcds_customer.sql
+15:52:07.111610 [info ] [MainThread]: 
+15:52:07.112304 [error] [MainThread]:   Database Error in model unique_cocktails (models/gold/unique_cocktails.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'PUBLIC'
+  compiled code at target/run/poc_dbt_snowflake/models/gold/unique_cocktails.sql
+15:52:07.112932 [info ] [MainThread]: 
+15:52:07.113602 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=0 TOTAL=2
+
+
+============================== 15:58:46.550705 | 523d57d8-5ebc-4eed-a6bb-65a3daad7fe9 ==============================
+15:58:46.550705 [info ] [MainThread]: Running with dbt=1.9.4
+15:58:47.357937 [info ] [MainThread]: Warning: No packages were found in packages.yml
+15:58:47.792810 [info ] [MainThread]: Warning: No packages were found in packages.yml
+
+
+============================== 16:01:53.593506 | ab4690e4-d35b-4c09-8f46-9120f760fc6b ==============================
+16:01:53.593506 [info ] [MainThread]: Running with dbt=1.9.4
+16:01:56.645472 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+16:02:03.736734 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found 3 package(s) specified in packages.yml, but only 0 package(s) installed in dbt_packages. Run "dbt deps" to install package dependencies.
+
+
+============================== 16:02:26.877099 | 23e524f4-fcbf-471d-bf8f-265929ad615a ==============================
+16:02:26.877099 [info ] [MainThread]: Running with dbt=1.9.4
+16:02:27.970612 [info ] [MainThread]: Updating lock file in file path: /mnt/d/Work/QBiz/dbt/qbiz-dbt-snowflake-main/package-lock.yml
+16:02:27.982605 [info ] [MainThread]: Installing godatadriven/dbt_date
+16:02:28.976305 [info ] [MainThread]: Installed from version 0.11.0
+16:02:28.977292 [info ] [MainThread]: Updated version available: 0.12.0
+16:02:28.978411 [info ] [MainThread]: Installing dbt-labs/dbt_external_tables
+16:02:30.809941 [info ] [MainThread]: Installed from version 0.11.1
+16:02:30.810913 [info ] [MainThread]: Up to date!
+16:02:30.812054 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+16:02:34.570498 [info ] [MainThread]: Installed from version 1.3.0
+16:02:34.571707 [info ] [MainThread]: Up to date!
+16:02:34.573228 [info ] [MainThread]: 
+16:02:34.574005 [info ] [MainThread]: Updates available for packages: ['godatadriven/dbt_date']                 
+Update your versions in packages.yml, then run dbt deps
+
+
+============================== 16:04:50.152731 | cad18acc-9be7-4457-a964-d24fde3f620b ==============================
+16:04:50.152731 [info ] [MainThread]: Running with dbt=1.9.4
+16:04:53.178971 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+16:05:00.176291 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+16:05:00.177445 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+16:05:05.464353 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 8 unused configuration paths:
+- models.prod.gold
+- models.prod.tests
+- models.prod.bronze
+- models.prod.lookup_tables
+- models.prod.silver_dim
+- models.prod.silver_fact
+- models.prod.silver_pii
+- seeds.qbiz
+16:05:05.724003 [info ] [MainThread]: Found 2 models, 5 data tests, 7 sources, 851 macros
+16:05:05.726264 [info ] [MainThread]: 
+16:05:05.727160 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+16:05:05.727850 [info ] [MainThread]: 
+16:05:09.318092 [info ] [Thread-1 (]: 1 of 2 START sql view model PUBLIC.tpcds_customer .............................. [RUN]
+16:05:09.318901 [info ] [Thread-2 (]: 2 of 2 START sql view model PUBLIC.unique_cocktails ............................ [RUN]
+16:05:09.517131 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model PUBLIC.tpcds_customer ..................... [[31mERROR[0m in 0.19s]
+16:05:09.829192 [error] [Thread-2 (]: 2 of 2 ERROR creating sql view model PUBLIC.unique_cocktails ................... [[31mERROR[0m in 0.50s]
+16:05:10.116844 [info ] [MainThread]: 
+16:05:10.117948 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 4.39 seconds (4.39s).
+16:05:10.172374 [info ] [MainThread]: 
+16:05:10.173289 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+16:05:10.174065 [info ] [MainThread]: 
+16:05:10.174783 [error] [MainThread]:   Database Error in model tpcds_customer (models/bronze/tpcds_customer.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'PUBLIC'
+  compiled code at target/run/poc_dbt_snowflake/models/bronze/tpcds_customer.sql
+16:05:10.175469 [info ] [MainThread]: 
+16:05:10.176259 [error] [MainThread]:   Database Error in model unique_cocktails (models/gold/unique_cocktails.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'PUBLIC'
+  compiled code at target/run/poc_dbt_snowflake/models/gold/unique_cocktails.sql
+16:05:10.176887 [info ] [MainThread]: 
+16:05:10.177535 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=0 TOTAL=2
+
+
+============================== 16:05:42.156335 | 0c5d998e-17a4-45ad-8f3f-1581d95f8386 ==============================
+16:05:42.156335 [info ] [MainThread]: Running with dbt=1.9.4
+16:05:42.163812 [error] [MainThread]: Encountered an error:
+Runtime Error
+  The profile 'poc_dbt_snowflake' does not have a target named 'prod'. The valid target names for this profile are:
+   - dev
+
+
+============================== 16:07:33.698320 | ccf29c09-48ec-4b19-b8d6-4f0451453f32 ==============================
+16:07:33.698320 [info ] [MainThread]: Running with dbt=1.9.4
+16:07:36.507872 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+16:07:43.053536 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+16:07:43.055076 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+16:07:48.314581 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 8 unused configuration paths:
+- models.prod.bronze
+- models.prod.silver_dim
+- models.prod.gold
+- models.prod.lookup_tables
+- models.prod.silver_pii
+- models.prod.silver_fact
+- models.prod.tests
+- seeds.qbiz
+16:07:48.561143 [info ] [MainThread]: Found 2 models, 5 data tests, 7 sources, 851 macros
+16:07:48.563230 [info ] [MainThread]: 
+16:07:48.563917 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+16:07:48.564540 [info ] [MainThread]: 
+16:07:51.554165 [info ] [Thread-1 (]: 1 of 2 START sql view model None.tpcds_customer ................................ [RUN]
+16:07:51.555110 [info ] [Thread-2 (]: 2 of 2 START sql view model None.unique_cocktails .............................. [RUN]
+16:07:51.804880 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model None.tpcds_customer ....................... [[31mERROR[0m in 0.24s]
+16:07:54.302420 [info ] [Thread-2 (]: 2 of 2 OK created sql view model None.unique_cocktails ......................... [[32mSUCCESS 1[0m in 2.74s]
+16:07:54.582125 [info ] [MainThread]: 
+16:07:54.583188 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 6.02 seconds (6.02s).
+16:07:54.637951 [info ] [MainThread]: 
+16:07:54.639025 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+16:07:54.639731 [info ] [MainThread]: 
+16:07:54.640513 [error] [MainThread]:   Database Error in model tpcds_customer (models/bronze/tpcds_customer.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'QBIZ_DATA.TCPDS' does not exist or not authorized.
+  compiled code at target/run/poc_dbt_snowflake/models/bronze/tpcds_customer.sql
+16:07:54.641180 [info ] [MainThread]: 
+16:07:54.641859 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+
+
+============================== 16:15:21.135604 | 983aeece-b4d4-4d35-ba70-877f1fd18056 ==============================
+16:15:21.135604 [info ] [MainThread]: Running with dbt=1.9.4
+16:15:23.606709 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "poc_dbt_snowflake", target "prod" invalid: ('DBT', 'DBT') is not of type 'string'
+
+
+============================== 16:16:15.200130 | 6ae252ab-6ade-4a4a-b957-9c53eaad59f6 ==============================
+16:16:15.200130 [info ] [MainThread]: Running with dbt=1.9.4
+16:16:18.028897 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+16:16:24.545324 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+16:16:29.714337 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 6 unused configuration paths:
+- models.poc_dbt_snowflake.tests
+- models.poc_dbt_snowflake.silver_dim
+- models.poc_dbt_snowflake.lookup_tables
+- models.poc_dbt_snowflake.silver_fact
+- models.poc_dbt_snowflake.silver_pii
+- seeds.qbiz
+16:16:29.967536 [info ] [MainThread]: Found 2 models, 5 data tests, 7 sources, 851 macros
+16:16:29.969727 [info ] [MainThread]: 
+16:16:29.970511 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+16:16:29.971279 [info ] [MainThread]: 
+16:16:32.873290 [info ] [Thread-1 (]: 1 of 2 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+16:16:32.874155 [info ] [Thread-2 (]: 2 of 2 START sql view model gold.unique_cocktails .............................. [RUN]
+16:16:33.015451 [error] [Thread-1 (]: 1 of 2 ERROR creating sql incremental model bronze.tpcds_customer .............. [[31mERROR[0m in 0.13s]
+16:16:33.134114 [error] [Thread-2 (]: 2 of 2 ERROR creating sql view model gold.unique_cocktails ..................... [[31mERROR[0m in 0.25s]
+16:16:33.400907 [info ] [MainThread]: 
+16:16:33.402199 [info ] [MainThread]: Finished running 1 incremental model, 1 view model in 0 hours 0 minutes and 3.43 seconds (3.43s).
+16:16:33.459580 [info ] [MainThread]: 
+16:16:33.460648 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+16:16:33.461550 [info ] [MainThread]: 
+16:16:33.462409 [error] [MainThread]:   Compilation Error in model tpcds_customer (models/bronze/tpcds_customer.sql)
+  This model has an enforced contract, and its 'columns' specification is missing
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_incremental_snowflake (macros/materializations/incremental.sql)
+  > called by model tpcds_customer (models/bronze/tpcds_customer.sql)
+16:16:33.463099 [info ] [MainThread]: 
+16:16:33.463800 [error] [MainThread]:   Database Error in model unique_cocktails (models/gold/unique_cocktails.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'GOLD'
+  compiled code at target/run/poc_dbt_snowflake/models/gold/unique_cocktails.sql
+16:16:33.464462 [info ] [MainThread]: 
+16:16:33.465163 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=0 TOTAL=2
+
+
+============================== 09:20:00.118884 | ef167eda-a5ae-4236-a12b-bee8c0e41fe8 ==============================
+09:20:00.118884 [info ] [MainThread]: Running with dbt=1.9.4
+09:20:04.680960 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+09:20:16.536701 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 6 unused configuration paths:
+- models.poc_dbt_snowflake.tests
+- models.poc_dbt_snowflake.silver_dim
+- models.poc_dbt_snowflake.silver_fact
+- models.poc_dbt_snowflake.silver_pii
+- models.poc_dbt_snowflake.lookup_tables
+- seeds.qbiz
+09:20:16.857771 [info ] [MainThread]: Found 2 models, 5 data tests, 7 sources, 851 macros
+09:20:16.860056 [info ] [MainThread]: 
+09:20:16.860841 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+09:20:16.861503 [info ] [MainThread]: 
+09:20:20.337815 [info ] [Thread-1 (]: 1 of 2 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+09:20:20.338419 [info ] [Thread-2 (]: 2 of 2 START sql view model gold.unique_cocktails .............................. [RUN]
+09:20:20.496707 [error] [Thread-1 (]: 1 of 2 ERROR creating sql incremental model bronze.tpcds_customer .............. [[31mERROR[0m in 0.15s]
+09:20:20.637577 [error] [Thread-2 (]: 2 of 2 ERROR creating sql view model gold.unique_cocktails ..................... [[31mERROR[0m in 0.28s]
+09:20:20.930218 [info ] [MainThread]: 
+09:20:20.931109 [info ] [MainThread]: Finished running 1 incremental model, 1 view model in 0 hours 0 minutes and 4.07 seconds (4.07s).
+09:20:21.002875 [info ] [MainThread]: 
+09:20:21.003771 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+09:20:21.004490 [info ] [MainThread]: 
+09:20:21.005196 [error] [MainThread]:   Compilation Error in model tpcds_customer (models/bronze/tpcds_customer.sql)
+  This model has an enforced contract, and its 'columns' specification is missing
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_incremental_snowflake (macros/materializations/incremental.sql)
+  > called by model tpcds_customer (models/bronze/tpcds_customer.sql)
+09:20:21.005842 [info ] [MainThread]: 
+09:20:21.006515 [error] [MainThread]:   Database Error in model unique_cocktails (models/gold/unique_cocktails.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'GOLD'
+  compiled code at target/run/poc_dbt_snowflake/models/gold/unique_cocktails.sql
+09:20:21.007121 [info ] [MainThread]: 
+09:20:21.007741 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=0 TOTAL=2
+
+
+============================== 09:33:47.421302 | 48769e44-c87e-4019-a26c-74ae7dd1aee2 ==============================
+09:33:47.421302 [info ] [MainThread]: Running with dbt=1.9.4
+09:33:50.273296 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+09:34:00.982886 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 6 unused configuration paths:
+- models.poc_dbt_snowflake.silver_pii
+- models.poc_dbt_snowflake.lookup_tables
+- models.poc_dbt_snowflake.silver_fact
+- models.poc_dbt_snowflake.silver_dim
+- models.poc_dbt_snowflake.tests
+- seeds.qbiz
+09:34:01.240654 [info ] [MainThread]: Found 2 models, 5 data tests, 7 sources, 851 macros
+09:34:01.242823 [info ] [MainThread]: 
+09:34:01.243493 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+09:34:01.244330 [info ] [MainThread]: 
+09:34:04.065841 [info ] [Thread-1 (]: 1 of 2 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+09:34:04.066626 [info ] [Thread-2 (]: 2 of 2 START sql view model gold.unique_cocktails .............................. [RUN]
+09:34:04.185382 [error] [Thread-1 (]: 1 of 2 ERROR creating sql incremental model bronze.tpcds_customer .............. [[31mERROR[0m in 0.11s]
+09:34:05.540167 [info ] [Thread-2 (]: 2 of 2 OK created sql view model gold.unique_cocktails ......................... [[32mSUCCESS 1[0m in 1.45s]
+09:34:05.808577 [info ] [MainThread]: 
+09:34:05.809611 [info ] [MainThread]: Finished running 1 incremental model, 1 view model in 0 hours 0 minutes and 4.56 seconds (4.56s).
+09:34:05.862897 [info ] [MainThread]: 
+09:34:05.863587 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+09:34:05.864296 [info ] [MainThread]: 
+09:34:05.865030 [error] [MainThread]:   Compilation Error in model tpcds_customer (models/bronze/tpcds_customer.sql)
+  This model has an enforced contract, and its 'columns' specification is missing
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_incremental_snowflake (macros/materializations/incremental.sql)
+  > called by model tpcds_customer (models/bronze/tpcds_customer.sql)
+09:34:05.865700 [info ] [MainThread]: 
+09:34:05.866352 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+
+
+============================== 09:40:52.176700 | 44147326-3184-475c-a4b4-0ce46f9449be ==============================
+09:40:52.176700 [info ] [MainThread]: Running with dbt=1.9.4
+09:40:55.111481 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+09:41:06.180944 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 6 unused configuration paths:
+- models.poc_dbt_snowflake.silver_dim
+- models.poc_dbt_snowflake.tests
+- models.poc_dbt_snowflake.silver_fact
+- models.poc_dbt_snowflake.lookup_tables
+- models.poc_dbt_snowflake.silver_pii
+- seeds.qbiz
+09:41:06.449744 [info ] [MainThread]: Found 2 models, 5 data tests, 7 sources, 851 macros
+09:41:06.451873 [info ] [MainThread]: 
+09:41:06.452598 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+09:41:06.453240 [info ] [MainThread]: 
+09:41:09.418261 [info ] [Thread-1 (]: 1 of 2 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+09:41:09.418840 [info ] [Thread-2 (]: 2 of 2 START sql view model gold.unique_cocktails .............................. [RUN]
+09:41:09.542601 [error] [Thread-1 (]: 1 of 2 ERROR creating sql incremental model bronze.tpcds_customer .............. [[31mERROR[0m in 0.12s]
+09:41:10.792147 [info ] [Thread-2 (]: 2 of 2 OK created sql view model gold.unique_cocktails ......................... [[32mSUCCESS 1[0m in 1.35s]
+09:41:11.047336 [info ] [MainThread]: 
+09:41:11.048419 [info ] [MainThread]: Finished running 1 incremental model, 1 view model in 0 hours 0 minutes and 4.59 seconds (4.59s).
+09:41:11.103262 [info ] [MainThread]: 
+09:41:11.104211 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+09:41:11.104880 [info ] [MainThread]: 
+09:41:11.105582 [error] [MainThread]:   Compilation Error in model tpcds_customer (models/bronze/tpcds_customer.sql)
+  This model has an enforced contract, and its 'columns' specification is missing
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_incremental_snowflake (macros/materializations/incremental.sql)
+  > called by model tpcds_customer (models/bronze/tpcds_customer.sql)
+09:41:11.106227 [info ] [MainThread]: 
+09:41:11.106872 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+
+
+============================== 09:42:16.872278 | a835266a-0ff8-46fe-a103-ed014d45aa81 ==============================
+09:42:16.872278 [info ] [MainThread]: Running with dbt=1.9.4
+09:42:19.694301 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+09:42:26.688094 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading poc_dbt_snowflake: bronze/tpcds_customer.yml - Runtime Error
+    Syntax error near line 5
+    ------------------------------
+    2  | 
+    3  | models:
+    4  | - name: tpcds_customer
+    5  |     description: "TPCDS customer table containing customer demographic and account information."
+    6  |     columns:
+    7  |       - name: c_customer_sk
+    8  |         description: "Surrogate key for the customer."
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed in this context
+      in "<unicode string>", line 5, column 16
+
+
+============================== 09:43:11.290913 | 4448f713-b188-47c9-b6e4-8df40f079512 ==============================
+09:43:11.290913 [info ] [MainThread]: Running with dbt=1.9.4
+09:43:14.118782 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+09:43:24.865141 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 6 unused configuration paths:
+- models.poc_dbt_snowflake.silver_pii
+- models.poc_dbt_snowflake.tests
+- models.poc_dbt_snowflake.silver_fact
+- models.poc_dbt_snowflake.lookup_tables
+- models.poc_dbt_snowflake.silver_dim
+- seeds.qbiz
+09:43:25.151331 [info ] [MainThread]: Found 2 models, 5 data tests, 6 sources, 851 macros
+09:43:25.153687 [info ] [MainThread]: 
+09:43:25.154750 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+09:43:25.155721 [info ] [MainThread]: 
+09:43:28.010028 [info ] [Thread-1 (]: 1 of 2 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+09:43:28.010715 [info ] [Thread-2 (]: 2 of 2 START sql view model gold.unique_cocktails .............................. [RUN]
+09:43:28.286308 [error] [Thread-1 (]: 1 of 2 ERROR creating sql incremental model bronze.tpcds_customer .............. [[31mERROR[0m in 0.27s]
+09:43:29.612694 [info ] [Thread-2 (]: 2 of 2 OK created sql view model gold.unique_cocktails ......................... [[32mSUCCESS 1[0m in 1.58s]
+09:43:29.890404 [info ] [MainThread]: 
+09:43:29.891578 [info ] [MainThread]: Finished running 1 incremental model, 1 view model in 0 hours 0 minutes and 4.73 seconds (4.73s).
+09:43:29.948756 [info ] [MainThread]: 
+09:43:29.949740 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+09:43:29.950488 [info ] [MainThread]: 
+09:43:29.951263 [error] [MainThread]:   Database Error in model tpcds_customer (models/bronze/tpcds_customer.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'QBIZ_DATA.TCPDS' does not exist or not authorized.
+09:43:29.951918 [info ] [MainThread]: 
+09:43:29.952647 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+
+
+============================== 09:45:01.514932 | 57593bfe-f683-405b-b57c-81b96b155043 ==============================
+09:45:01.514932 [info ] [MainThread]: Running with dbt=1.9.4
+09:45:04.334964 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+09:45:14.681442 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 6 unused configuration paths:
+- models.poc_dbt_snowflake.tests
+- models.poc_dbt_snowflake.silver_fact
+- models.poc_dbt_snowflake.lookup_tables
+- models.poc_dbt_snowflake.silver_dim
+- models.poc_dbt_snowflake.silver_pii
+- seeds.qbiz
+09:45:14.957479 [info ] [MainThread]: Found 2 models, 5 data tests, 6 sources, 851 macros
+09:45:14.959605 [info ] [MainThread]: 
+09:45:14.960337 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+09:45:14.960990 [info ] [MainThread]: 
+09:45:17.747739 [info ] [Thread-1 (]: 1 of 2 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+09:45:17.748513 [info ] [Thread-2 (]: 2 of 2 START sql view model gold.unique_cocktails .............................. [RUN]
+09:45:17.990998 [error] [Thread-1 (]: 1 of 2 ERROR creating sql incremental model bronze.tpcds_customer .............. [[31mERROR[0m in 0.24s]
+09:45:18.909105 [info ] [Thread-2 (]: 2 of 2 OK created sql view model gold.unique_cocktails ......................... [[32mSUCCESS 1[0m in 1.14s]
+09:45:19.158334 [info ] [MainThread]: 
+09:45:19.159528 [info ] [MainThread]: Finished running 1 incremental model, 1 view model in 0 hours 0 minutes and 4.20 seconds (4.20s).
+09:45:19.389055 [info ] [MainThread]: 
+09:45:19.389804 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+09:45:19.390466 [info ] [MainThread]: 
+09:45:19.391201 [error] [MainThread]:   Database Error in model tpcds_customer (models/bronze/tpcds_customer.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'QBIZ_DATA.TCPDS' does not exist or not authorized.
+09:45:19.391813 [info ] [MainThread]: 
+09:45:19.392451 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+
+
+============================== 09:49:24.745973 | a56c115c-95c7-41f2-85de-91df9a3b6435 ==============================
+09:49:24.745973 [info ] [MainThread]: Running with dbt=1.9.4
+09:49:27.584453 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+09:49:38.079598 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 6 unused configuration paths:
+- models.poc_dbt_snowflake.lookup_tables
+- models.poc_dbt_snowflake.silver_dim
+- models.poc_dbt_snowflake.tests
+- models.poc_dbt_snowflake.silver_pii
+- models.poc_dbt_snowflake.silver_fact
+- seeds.qbiz
+09:49:38.365350 [info ] [MainThread]: Found 2 models, 5 data tests, 6 sources, 851 macros
+09:49:38.367452 [info ] [MainThread]: 
+09:49:38.368144 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+09:49:38.368827 [info ] [MainThread]: 
+09:49:41.232950 [info ] [Thread-1 (]: 1 of 2 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+09:49:41.233532 [info ] [Thread-2 (]: 2 of 2 START sql view model gold.unique_cocktails .............................. [RUN]
+09:49:41.487201 [error] [Thread-1 (]: 1 of 2 ERROR creating sql incremental model bronze.tpcds_customer .............. [[31mERROR[0m in 0.25s]
+09:49:42.419063 [info ] [Thread-2 (]: 2 of 2 OK created sql view model gold.unique_cocktails ......................... [[32mSUCCESS 1[0m in 1.17s]
+09:49:42.678322 [info ] [MainThread]: 
+09:49:42.679520 [info ] [MainThread]: Finished running 1 incremental model, 1 view model in 0 hours 0 minutes and 4.31 seconds (4.31s).
+09:49:42.734533 [info ] [MainThread]: 
+09:49:42.735242 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+09:49:42.735994 [info ] [MainThread]: 
+09:49:42.736724 [error] [MainThread]:   Database Error in model tpcds_customer (models/bronze/tpcds_customer.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'QBIZ_DATA.TCPDS' does not exist or not authorized.
+09:49:42.737341 [info ] [MainThread]: 
+09:49:42.737978 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+
+
+============================== 09:52:31.399230 | efe90a2d-8b72-4332-980e-3ad4384959ff ==============================
+09:52:31.399230 [info ] [MainThread]: Running with dbt=1.9.4
+09:52:34.228537 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+09:52:44.694204 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 6 unused configuration paths:
+- models.poc_dbt_snowflake.tests
+- models.poc_dbt_snowflake.lookup_tables
+- models.poc_dbt_snowflake.silver_dim
+- models.poc_dbt_snowflake.silver_fact
+- models.poc_dbt_snowflake.silver_pii
+- seeds.qbiz
+09:52:44.964752 [info ] [MainThread]: Found 2 models, 5 data tests, 6 sources, 851 macros
+09:52:44.967115 [info ] [MainThread]: 
+09:52:44.967854 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+09:52:44.968508 [info ] [MainThread]: 
+09:52:47.819287 [info ] [Thread-1 (]: 1 of 2 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+09:52:47.820159 [info ] [Thread-2 (]: 2 of 2 START sql view model gold.unique_cocktails .............................. [RUN]
+09:52:48.105390 [error] [Thread-1 (]: 1 of 2 ERROR creating sql incremental model bronze.tpcds_customer .............. [[31mERROR[0m in 0.28s]
+09:52:49.117910 [info ] [Thread-2 (]: 2 of 2 OK created sql view model gold.unique_cocktails ......................... [[32mSUCCESS 1[0m in 1.28s]
+09:52:49.370764 [info ] [MainThread]: 
+09:52:49.371872 [info ] [MainThread]: Finished running 1 incremental model, 1 view model in 0 hours 0 minutes and 4.40 seconds (4.40s).
+09:52:49.529528 [info ] [MainThread]: 
+09:52:49.530430 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+09:52:49.531083 [info ] [MainThread]: 
+09:52:49.531819 [error] [MainThread]:   Database Error in model tpcds_customer (models/bronze/tpcds_customer.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'QBIZ_DATA.TCPDS' does not exist or not authorized.
+09:52:49.532428 [info ] [MainThread]: 
+09:52:49.533059 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+
+
+============================== 10:01:35.069211 | 2020744f-b16e-4ea2-8d62-4fbb58872a10 ==============================
+10:01:35.069211 [info ] [MainThread]: Running with dbt=1.9.4
+10:01:37.902193 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+10:01:49.366478 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 6 unused configuration paths:
+- models.poc_dbt_snowflake.silver_pii
+- models.poc_dbt_snowflake.lookup_tables
+- models.poc_dbt_snowflake.silver_fact
+- models.poc_dbt_snowflake.tests
+- models.poc_dbt_snowflake.silver_dim
+- seeds.qbiz
+10:01:49.658729 [info ] [MainThread]: Found 2 models, 5 data tests, 6 sources, 851 macros
+10:01:49.660893 [info ] [MainThread]: 
+10:01:49.661589 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+10:01:49.662228 [info ] [MainThread]: 
+10:01:52.843791 [info ] [Thread-1 (]: 1 of 2 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+10:01:52.844612 [info ] [Thread-2 (]: 2 of 2 START sql view model gold.unique_cocktails .............................. [RUN]
+10:01:53.128447 [error] [Thread-1 (]: 1 of 2 ERROR creating sql incremental model bronze.tpcds_customer .............. [[31mERROR[0m in 0.27s]
+10:01:54.115051 [info ] [Thread-2 (]: 2 of 2 OK created sql view model gold.unique_cocktails ......................... [[32mSUCCESS 1[0m in 1.26s]
+10:01:54.367362 [info ] [MainThread]: 
+10:01:54.368531 [info ] [MainThread]: Finished running 1 incremental model, 1 view model in 0 hours 0 minutes and 4.70 seconds (4.70s).
+10:01:54.430184 [info ] [MainThread]: 
+10:01:54.431151 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+10:01:54.431928 [info ] [MainThread]: 
+10:01:54.432821 [error] [MainThread]:   Database Error in model tpcds_customer (models/bronze/tpcds_customer.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'QBIZ_DATA.TCPDS' does not exist or not authorized.
+10:01:54.433704 [info ] [MainThread]: 
+10:01:54.434433 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+
+
+============================== 11:04:28.835231 | a1728718-7ac5-489b-8cbf-a83f5a01b0ce ==============================
+11:04:28.835231 [info ] [MainThread]: Running with dbt=1.9.4
+11:04:31.989888 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+11:04:43.809850 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 6 unused configuration paths:
+- models.poc_dbt_snowflake.silver_dim
+- models.poc_dbt_snowflake.tests
+- models.poc_dbt_snowflake.silver_pii
+- models.poc_dbt_snowflake.silver_fact
+- models.poc_dbt_snowflake.lookup_tables
+- seeds.qbiz
+11:04:44.112083 [info ] [MainThread]: Found 2 models, 5 data tests, 6 sources, 851 macros
+11:04:44.114885 [info ] [MainThread]: 
+11:04:44.115724 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+11:04:44.116396 [info ] [MainThread]: 
+
+
+============================== 13:22:07.197370 | 958d83f5-7850-4f7e-ae97-ccf6cd692130 ==============================
+13:22:07.197370 [info ] [MainThread]: Running with dbt=1.9.4
+13:22:10.138757 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+13:22:21.732500 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 6 unused configuration paths:
+- models.poc_dbt_snowflake.lookup_tables
+- models.poc_dbt_snowflake.tests
+- models.poc_dbt_snowflake.silver_fact
+- models.poc_dbt_snowflake.silver_pii
+- models.poc_dbt_snowflake.silver_dim
+- seeds.qbiz
+13:22:22.007954 [info ] [MainThread]: Found 2 models, 5 data tests, 6 sources, 851 macros
+13:22:22.010969 [info ] [MainThread]: 
+13:22:22.011767 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+13:22:22.012549 [info ] [MainThread]: 
+13:22:24.927462 [info ] [Thread-1 (]: 1 of 2 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+13:22:24.928071 [info ] [Thread-2 (]: 2 of 2 START sql view model gold.unique_cocktails .............................. [RUN]
+13:22:26.230208 [info ] [Thread-2 (]: 2 of 2 OK created sql view model gold.unique_cocktails ......................... [[32mSUCCESS 1[0m in 1.28s]
+13:22:26.230873 [error] [Thread-1 (]: 1 of 2 ERROR creating sql incremental model bronze.tpcds_customer .............. [[31mERROR[0m in 1.30s]
+13:22:26.481038 [info ] [MainThread]: 
+13:22:26.482168 [info ] [MainThread]: Finished running 1 incremental model, 1 view model in 0 hours 0 minutes and 4.47 seconds (4.47s).
+13:22:26.537690 [info ] [MainThread]: 
+13:22:26.538617 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+13:22:26.539269 [info ] [MainThread]: 
+13:22:26.540057 [error] [MainThread]:   Compilation Error in model tpcds_customer (models/bronze/tpcds_customer.sql)
+  Contracted models require data_type to be defined for each column. Please ensure that the column name and data_type are defined within the YAML configuration for the ['c_customer_sk', 'c_customer_id', 'c_current_cdemo_sk', 'c_current_hdemo_sk', 'c_current_addr_sk', 'c_first_shipto_date_sk', 'c_first_sales_date_sk', 'c_salutation', 'c_first_name', 'c_last_name', 'c_preferred_cust_flag', 'c_birth_day', 'c_birth_month', 'c_birth_year', 'c_birth_country', 'c_login', 'c_email_address', 'c_last_review_date'] column(s).
+  
+  > in macro default__get_empty_schema_sql (macros/adapters/columns.sql)
+  > called by macro get_empty_schema_sql (macros/adapters/columns.sql)
+  > called by macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_incremental_snowflake (macros/materializations/incremental.sql)
+  > called by model tpcds_customer (models/bronze/tpcds_customer.sql)
+13:22:26.540818 [info ] [MainThread]: 
+13:22:26.541664 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+
+
+============================== 13:42:12.961204 | be6e5049-2e25-48b4-b9a0-98d875ca407a ==============================
+13:42:12.961204 [info ] [MainThread]: Running with dbt=1.9.4
+13:42:15.789174 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+13:42:26.646321 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 6 unused configuration paths:
+- models.poc_dbt_snowflake.silver_pii
+- models.poc_dbt_snowflake.silver_fact
+- models.poc_dbt_snowflake.silver_dim
+- models.poc_dbt_snowflake.tests
+- models.poc_dbt_snowflake.lookup_tables
+- seeds.qbiz
+13:42:26.903159 [info ] [MainThread]: Found 2 models, 5 data tests, 6 sources, 851 macros
+13:42:26.905293 [info ] [MainThread]: 
+13:42:26.905980 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+13:42:26.906610 [info ] [MainThread]: 
+13:42:30.184294 [info ] [Thread-1 (]: 1 of 2 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+13:42:30.185101 [info ] [Thread-2 (]: 2 of 2 START sql view model gold.unique_cocktails .............................. [RUN]
+13:42:31.046275 [warn ] [Thread-1 (]: Detected columns with numeric type and unspecified precision/scale, this can lead to unintended rounding: ['c_customer_sk', 'c_current_cdemo_sk', 'c_current_hdemo_sk', 'c_current_addr_sk', 'c_first_shipto_date_sk', 'c_first_sales_date_sk', 'c_birth_day', 'c_birth_month', 'c_birth_year']`
+13:42:31.177762 [error] [Thread-1 (]: 1 of 2 ERROR creating sql incremental model bronze.tpcds_customer .............. [[31mERROR[0m in 0.99s]
+13:42:31.256804 [info ] [Thread-2 (]: 2 of 2 OK created sql view model gold.unique_cocktails ......................... [[32mSUCCESS 1[0m in 1.06s]
+13:42:31.528028 [info ] [MainThread]: 
+13:42:31.529110 [info ] [MainThread]: Finished running 1 incremental model, 1 view model in 0 hours 0 minutes and 4.62 seconds (4.62s).
+13:42:31.580708 [info ] [MainThread]: 
+13:42:31.581606 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+13:42:31.582390 [info ] [MainThread]: 
+13:42:31.583088 [error] [MainThread]:   Compilation Error in model tpcds_customer (models/bronze/tpcds_customer.sql)
+  This model has an enforced contract that failed.
+  Please ensure the name, data_type, and number of columns in your contract match the columns in your model's definition.
+  
+  | column_name    | definition_type | contract_type | mismatch_reason    |
+  | -------------- | --------------- | ------------- | ------------------ |
+  | ETL_CREATED_TS | TIMESTAMP_TZ    | TIMESTAMP_NTZ | data type mismatch |
+  | ETL_UPDATED_TS | TIMESTAMP_TZ    | TIMESTAMP_NTZ | data type mismatch |
+  
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_incremental_snowflake (macros/materializations/incremental.sql)
+  > called by model tpcds_customer (models/bronze/tpcds_customer.sql)
+13:42:31.583727 [info ] [MainThread]: 
+13:42:31.584357 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+
+
+============================== 13:47:48.597565 | 070bde98-8bd7-4877-b146-5543fd3432e6 ==============================
+13:47:48.597565 [info ] [MainThread]: Running with dbt=1.9.4
+13:47:51.387526 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+13:47:57.817160 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+13:48:03.418974 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 6 unused configuration paths:
+- models.poc_dbt_snowflake.lookup_tables
+- models.poc_dbt_snowflake.silver_pii
+- models.poc_dbt_snowflake.silver_dim
+- models.poc_dbt_snowflake.tests
+- models.poc_dbt_snowflake.silver_fact
+- seeds.qbiz
+13:48:03.671956 [info ] [MainThread]: Found 2 models, 5 data tests, 6 sources, 851 macros
+13:48:03.674104 [info ] [MainThread]: 
+13:48:03.674788 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+13:48:03.675545 [info ] [MainThread]: 
+13:48:06.501918 [info ] [Thread-1 (]: 1 of 2 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+13:48:06.502604 [info ] [Thread-2 (]: 2 of 2 START sql view model gold.unique_cocktails .............................. [RUN]
+13:48:07.273681 [warn ] [Thread-1 (]: Detected columns with numeric type and unspecified precision/scale, this can lead to unintended rounding: ['c_customer_sk', 'c_current_cdemo_sk', 'c_current_hdemo_sk', 'c_current_addr_sk', 'c_first_shipto_date_sk', 'c_first_sales_date_sk', 'c_birth_day', 'c_birth_month', 'c_birth_year']`
+13:48:07.914120 [info ] [Thread-2 (]: 2 of 2 OK created sql view model gold.unique_cocktails ......................... [[32mSUCCESS 1[0m in 1.40s]
+13:48:09.297357 [info ] [Thread-1 (]: 1 of 2 OK created sql incremental model bronze.tpcds_customer .................. [[32mSUCCESS 1[0m in 2.79s]
+13:48:09.588349 [info ] [MainThread]: 
+13:48:09.589412 [info ] [MainThread]: Finished running 1 incremental model, 1 view model in 0 hours 0 minutes and 5.91 seconds (5.91s).
+13:48:09.644148 [info ] [MainThread]: 
+13:48:09.645084 [info ] [MainThread]: [32mCompleted successfully[0m
+13:48:09.645813 [info ] [MainThread]: 
+13:48:09.646519 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+
+
+============================== 15:16:06.431711 | f567458c-e348-40d2-bdff-b8339bc1cdd7 ==============================
+15:16:06.431711 [info ] [MainThread]: Running with dbt=1.9.4
+15:16:13.250136 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+15:16:26.048939 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.poc_dbt_snowflake.silver_dim
+- models.poc_dbt_snowflake.tests
+- models.poc_dbt_snowflake.silver_fact
+- models.poc_dbt_snowflake.silver_pii
+- seeds.qbiz
+15:16:26.664701 [info ] [MainThread]: Found 7 models, 30 data tests, 6 sources, 851 macros
+15:16:26.667121 [info ] [MainThread]: 
+15:16:26.667827 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+15:16:26.668455 [info ] [MainThread]: 
+15:16:32.324038 [info ] [Thread-1 (]: 1 of 7 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+15:16:32.324877 [info ] [Thread-2 (]: 2 of 7 START sql incremental model lookup_tables.tpcds_date_dim ................ [RUN]
+15:16:32.325540 [info ] [Thread-3 (]: 3 of 7 START sql incremental model bronze.tpcds_store .......................... [RUN]
+15:16:32.326236 [info ] [Thread-4 (]: 4 of 7 START sql incremental model bronze.tpcds_store_sales .................... [RUN]
+15:16:32.765248 [warn ] [Thread-2 (]: Detected columns with numeric type and unspecified precision/scale, this can lead to unintended rounding: ['D_DATE_SK', 'D_MONTH_SEQ', 'D_WEEK_SEQ', 'D_QUARTER_SEQ', 'D_YEAR', 'D_DOW', 'D_MOY', 'D_DOM', 'D_QOY', 'D_FY_YEAR', 'D_FY_QUARTER_SEQ', 'D_FY_WEEK_SEQ']`
+15:16:32.778185 [warn ] [Thread-1 (]: Detected columns with numeric type and unspecified precision/scale, this can lead to unintended rounding: ['c_customer_sk', 'c_current_cdemo_sk', 'c_current_hdemo_sk', 'c_current_addr_sk', 'c_first_shipto_date_sk', 'c_first_sales_date_sk', 'c_birth_day', 'c_birth_month', 'c_birth_year']`
+15:16:32.784880 [error] [Thread-3 (]: 3 of 7 ERROR creating sql incremental model bronze.tpcds_store ................. [[31mERROR[0m in 0.43s]
+15:16:32.786488 [info ] [Thread-3 (]: 5 of 7 START sql incremental model bronze.tpcds_web_page ....................... [RUN]
+15:16:32.906053 [error] [Thread-2 (]: 2 of 7 ERROR creating sql incremental model lookup_tables.tpcds_date_dim ....... [[31mERROR[0m in 0.57s]
+15:16:32.907812 [info ] [Thread-2 (]: 6 of 7 START sql incremental model bronze.tpcds_web_sales ...................... [RUN]
+15:16:33.013268 [warn ] [Thread-4 (]: Detected columns with numeric type and unspecified precision/scale, this can lead to unintended rounding: ['SS_SOLD_DATE_SK', 'SS_SOLD_TIME_SK', 'SS_ITEM_SK', 'SS_CUSTOMER_SK', 'SS_CDEMO_SK', 'SS_HDEMO_SK', 'SS_ADDR_SK', 'SS_STORE_SK', 'SS_PROMO_SK', 'SS_TICKET_NUMBER', 'SS_QUANTITY', 'SS_WHOLESALE_COST', 'SS_LIST_PRICE', 'SS_SALES_PRICE', 'SS_EXT_DISCOUNT_AMT', 'SS_EXT_SALES_PRICE', 'SS_EXT_WHOLESALE_COST', 'SS_EXT_LIST_PRICE', 'SS_EXT_TAX', 'SS_COUPON_AMT', 'SS_NET_PAID', 'SS_NET_PAID_INC_TAX', 'SS_NET_PROFIT']`
+15:16:33.040726 [warn ] [Thread-3 (]: Detected columns with numeric type and unspecified precision/scale, this can lead to unintended rounding: ['WP_WEB_PAGE_SK', 'WP_CREATION_DATE_SK', 'WP_ACCESS_DATE_SK', 'WP_CUSTOMER_SK', 'WP_CHAR_COUNT', 'WP_LINK_COUNT', 'WP_IMAGE_COUNT', 'WP_MAX_AD_COUNT']`
+15:16:33.171828 [warn ] [Thread-2 (]: Detected columns with numeric type and unspecified precision/scale, this can lead to unintended rounding: ['WS_SOLD_DATE_SK', 'WS_SOLD_TIME_SK', 'WS_SHIP_DATE_SK', 'WS_ITEM_SK', 'WS_BILL_CUSTOMER_SK', 'WS_BILL_CDEMO_SK', 'WS_BILL_HDEMO_SK', 'WS_BILL_ADDR_SK', 'WS_SHIP_CUSTOMER_SK', 'WS_SHIP_CDEMO_SK', 'WS_SHIP_HDEMO_SK', 'WS_SHIP_ADDR_SK', 'WS_WEB_PAGE_SK', 'WS_WEB_SITE_SK', 'WS_SHIP_MODE_SK', 'WS_WAREHOUSE_SK', 'WS_PROMO_SK', 'WS_ORDER_NUMBER', 'WS_QUANTITY', 'WS_WHOLESALE_COST', 'WS_LIST_PRICE', 'WS_SALES_PRICE', 'WS_EXT_DISCOUNT_AMT', 'WS_EXT_SALES_PRICE', 'WS_EXT_WHOLESALE_COST', 'WS_EXT_LIST_PRICE', 'WS_EXT_TAX', 'WS_COUPON_AMT', 'WS_EXT_SHIP_COST', 'WS_NET_PAID', 'WS_NET_PAID_INC_TAX', 'WS_NET_PAID_INC_SHIP', 'WS_NET_PAID_INC_SHIP_TAX', 'WS_NET_PROFIT']`
+15:16:34.107931 [info ] [Thread-3 (]: 5 of 7 OK created sql incremental model bronze.tpcds_web_page .................. [[32mSUCCESS 1[0m in 1.32s]
+15:16:34.109919 [info ] [Thread-3 (]: 7 of 7 START sql view model gold.unique_cocktails .............................. [RUN]
+15:16:35.108704 [info ] [Thread-3 (]: 7 of 7 OK created sql view model gold.unique_cocktails ......................... [[32mSUCCESS 1[0m in 1.00s]
+15:16:35.992316 [info ] [Thread-1 (]: 1 of 7 OK created sql incremental model bronze.tpcds_customer .................. [[32mSUCCESS 27[0m in 3.67s]
+15:16:37.449662 [info ] [Thread-2 (]: 6 of 7 OK created sql incremental model bronze.tpcds_web_sales ................. [[32mSUCCESS 1[0m in 4.54s]
+15:16:38.868280 [info ] [Thread-4 (]: 4 of 7 OK created sql incremental model bronze.tpcds_store_sales ............... [[32mSUCCESS 1[0m in 6.52s]
+15:16:39.524603 [info ] [MainThread]: 
+15:16:39.525923 [info ] [MainThread]: Finished running 6 incremental models, 1 view model in 0 hours 0 minutes and 12.86 seconds (12.86s).
+15:16:39.592504 [info ] [MainThread]: 
+15:16:39.593428 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+15:16:39.594281 [info ] [MainThread]: 
+15:16:39.595062 [error] [MainThread]:   Database Error in model tpcds_store (models/bronze/tpcds_store.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 36 at position 0 unexpected ','.
+  syntax error line 36 at position 18 unexpected '('.
+  syntax error line 36 at position 43 unexpected '('.
+  syntax error line 37 at position 22 unexpected '('.
+  syntax error line 37 at position 47 unexpected '('.
+  syntax error line 38 at position 10 unexpected '('.
+  syntax error line 39 at position 9 unexpected '('.
+  syntax error line 39 at position 14 unexpected 'NULL'.
+15:16:39.595806 [info ] [MainThread]: 
+15:16:39.596542 [error] [MainThread]:   Compilation Error in model tpcds_date_dim (models/lookup_tables/tpcds_date_dim.sql)
+  This model has an enforced contract that failed.
+  Please ensure the name, data_type, and number of columns in your contract match the columns in your model's definition.
+  
+  | column_name         | definition_type | contract_type | mismatch_reason     |
+  | ------------------- | --------------- | ------------- | ------------------- |
+  | D_CURRENT_DAY       | TEXT            |               | missing in contract |
+  | D_CURRENT_MONTH     | TEXT            |               | missing in contract |
+  | D_CURRENT_QUARTER   | TEXT            |               | missing in contract |
+  | D_CURRENT_WEEK      | TEXT            |               | missing in contract |
+  | D_CURRENT_YEAR      | TEXT            |               | missing in contract |
+  | D_FIRST_DOM         | FIXED           |               | missing in contract |
+  | D_FOLLOWING_HOLIDAY | TEXT            |               | missing in contract |
+  | D_HOLIDAY           | TEXT            |               | missing in contract |
+  | D_LAST_DOM          | FIXED           |               | missing in contract |
+  | D_QUARTER_NAME      | TEXT            |               | missing in contract |
+  | D_SAME_DAY_LQ       | FIXED           |               | missing in contract |
+  | D_SAME_DAY_LY       | FIXED           |               | missing in contract |
+  | D_WEEKEND           | TEXT            |               | missing in contract |
+  
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_incremental_snowflake (macros/materializations/incremental.sql)
+  > called by model tpcds_date_dim (models/lookup_tables/tpcds_date_dim.sql)
+15:16:39.597316 [info ] [MainThread]: 
+15:16:39.597999 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=2 SKIP=0 TOTAL=7
+
+
+============================== 15:52:54.144213 | 5805e58b-2f5a-4fc4-8625-6e631597e96b ==============================
+15:52:54.144213 [info ] [MainThread]: Running with dbt=1.9.4
+15:52:56.903989 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+15:53:07.618703 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'date_dim' in the 'models' section of file 'models/lookup_tables/tpcds_date_dim.yml'
+15:53:07.665325 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.poc_dbt_snowflake.not_null_date_dim_hash_key.8326d9772a' (models/lookup_tables/tpcds_date_dim.yml) depends on a node named 'date_dim' in package '' which was not found
+15:53:07.666334 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.poc_dbt_snowflake.unique_date_dim_hash_key.0444a38ea7' (models/lookup_tables/tpcds_date_dim.yml) depends on a node named 'date_dim' in package '' which was not found
+15:53:07.667057 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.poc_dbt_snowflake.not_null_date_dim_etl_created_ts.ad0d95cb81' (models/lookup_tables/tpcds_date_dim.yml) depends on a node named 'date_dim' in package '' which was not found
+15:53:07.667741 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.poc_dbt_snowflake.not_null_date_dim_etl_updated_ts.50c9849576' (models/lookup_tables/tpcds_date_dim.yml) depends on a node named 'date_dim' in package '' which was not found
+15:53:07.668459 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.poc_dbt_snowflake.not_null_date_dim_updated_by.70f32b9a2e' (models/lookup_tables/tpcds_date_dim.yml) depends on a node named 'date_dim' in package '' which was not found
+15:53:07.717442 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.poc_dbt_snowflake.silver_fact
+- models.poc_dbt_snowflake.tests
+- models.poc_dbt_snowflake.silver_pii
+- models.poc_dbt_snowflake.silver_dim
+- seeds.qbiz
+15:53:07.984972 [info ] [MainThread]: Found 7 models, 25 data tests, 6 sources, 851 macros
+15:53:07.987279 [info ] [MainThread]: 
+15:53:07.987999 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+15:53:07.988624 [info ] [MainThread]: 
+15:53:10.831499 [info ] [Thread-1 (]: 1 of 7 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+15:53:10.832102 [info ] [Thread-2 (]: 2 of 7 START sql incremental model lookup_tables.tpcds_date_dim ................ [RUN]
+15:53:10.832863 [info ] [Thread-3 (]: 3 of 7 START sql incremental model bronze.tpcds_store .......................... [RUN]
+15:53:10.833515 [info ] [Thread-4 (]: 4 of 7 START sql incremental model bronze.tpcds_store_sales .................... [RUN]
+15:53:10.982190 [error] [Thread-2 (]: 2 of 7 ERROR creating sql incremental model lookup_tables.tpcds_date_dim ....... [[31mERROR[0m in 0.13s]
+15:53:10.983975 [info ] [Thread-2 (]: 5 of 7 START sql incremental model bronze.tpcds_web_page ....................... [RUN]
+15:53:11.724564 [warn ] [Thread-1 (]: Detected columns with numeric type and unspecified precision/scale, this can lead to unintended rounding: ['c_customer_sk', 'c_current_cdemo_sk', 'c_current_hdemo_sk', 'c_current_addr_sk', 'c_first_shipto_date_sk', 'c_first_sales_date_sk', 'c_birth_day', 'c_birth_month', 'c_birth_year']`
+15:53:11.893911 [error] [Thread-2 (]: 5 of 7 ERROR creating sql incremental model bronze.tpcds_web_page .............. [[31mERROR[0m in 0.91s]
+15:53:11.896106 [error] [Thread-4 (]: 4 of 7 ERROR creating sql incremental model bronze.tpcds_store_sales ........... [[31mERROR[0m in 1.04s]
+15:53:11.897710 [info ] [Thread-2 (]: 6 of 7 START sql incremental model bronze.tpcds_web_sales ...................... [RUN]
+15:53:11.899431 [info ] [Thread-4 (]: 7 of 7 START sql view model gold.unique_cocktails .............................. [RUN]
+15:53:11.907377 [error] [Thread-3 (]: 3 of 7 ERROR creating sql incremental model bronze.tpcds_store ................. [[31mERROR[0m in 1.06s]
+15:53:12.519620 [error] [Thread-2 (]: 6 of 7 ERROR creating sql incremental model bronze.tpcds_web_sales ............. [[31mERROR[0m in 0.62s]
+15:53:13.413835 [info ] [Thread-4 (]: 7 of 7 OK created sql view model gold.unique_cocktails ......................... [[32mSUCCESS 1[0m in 1.50s]
+15:53:14.575005 [info ] [Thread-1 (]: 1 of 7 OK created sql incremental model bronze.tpcds_customer .................. [[32mSUCCESS 27[0m in 3.74s]
+15:53:15.100619 [info ] [MainThread]: 
+15:53:15.101637 [info ] [MainThread]: Finished running 6 incremental models, 1 view model in 0 hours 0 minutes and 7.11 seconds (7.11s).
+15:53:15.164542 [info ] [MainThread]: 
+15:53:15.165413 [info ] [MainThread]: [31mCompleted with 5 errors, 0 partial successes, and 0 warnings:[0m
+15:53:15.166096 [info ] [MainThread]: 
+15:53:15.166802 [error] [MainThread]:   Compilation Error in model tpcds_date_dim (models/lookup_tables/tpcds_date_dim.sql)
+  This model has an enforced contract, and its 'columns' specification is missing
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_incremental_snowflake (macros/materializations/incremental.sql)
+  > called by model tpcds_date_dim (models/lookup_tables/tpcds_date_dim.sql)
+15:53:15.167452 [info ] [MainThread]: 
+15:53:15.168117 [error] [MainThread]:   Database Error in model tpcds_web_page (models/bronze/tpcds_web_page.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 24 unexpected '('.
+  syntax error line 5 at position 25 unexpected '38.0'.
+  syntax error line 5 at position 30 unexpected ')'.
+15:53:15.168732 [info ] [MainThread]: 
+15:53:15.169377 [error] [MainThread]:   Database Error in model tpcds_store_sales (models/bronze/tpcds_store_sales.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 24 unexpected '('.
+  syntax error line 5 at position 25 unexpected '38.0'.
+  syntax error line 5 at position 30 unexpected ')'.
+15:53:15.170017 [info ] [MainThread]: 
+15:53:15.170654 [error] [MainThread]:   Database Error in model tpcds_store (models/bronze/tpcds_store.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 24 unexpected '('.
+  syntax error line 5 at position 25 unexpected '38.0'.
+  syntax error line 5 at position 30 unexpected ')'.
+15:53:15.171249 [info ] [MainThread]: 
+15:53:15.171871 [error] [MainThread]:   Database Error in model tpcds_web_sales (models/bronze/tpcds_web_sales.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 24 unexpected '('.
+  syntax error line 5 at position 25 unexpected '38.0'.
+  syntax error line 5 at position 30 unexpected ')'.
+15:53:15.172483 [info ] [MainThread]: 
+15:53:15.173106 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=5 SKIP=0 TOTAL=7
+
+
+============================== 16:01:23.240847 | 12257493-10fb-4590-88ea-5089b5ec1ba6 ==============================
+16:01:23.240847 [info ] [MainThread]: Running with dbt=1.9.4
+16:01:26.041412 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+16:01:37.670900 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.poc_dbt_snowflake.silver_dim
+- models.poc_dbt_snowflake.silver_pii
+- models.poc_dbt_snowflake.tests
+- models.poc_dbt_snowflake.silver_fact
+- seeds.qbiz
+16:01:37.939608 [info ] [MainThread]: Found 7 models, 25 data tests, 6 sources, 851 macros
+16:01:37.942143 [info ] [MainThread]: 
+16:01:37.942852 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+16:01:37.943490 [info ] [MainThread]: 
+16:01:40.951226 [info ] [Thread-1 (]: 1 of 7 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+16:01:40.952128 [info ] [Thread-2 (]: 2 of 7 START sql incremental model lookup_tables.tpcds_date_dim ................ [RUN]
+16:01:40.952835 [info ] [Thread-3 (]: 3 of 7 START sql incremental model bronze.tpcds_store .......................... [RUN]
+16:01:40.953366 [info ] [Thread-4 (]: 4 of 7 START sql incremental model bronze.tpcds_store_sales .................... [RUN]
+16:01:41.140653 [error] [Thread-2 (]: 2 of 7 ERROR creating sql incremental model lookup_tables.tpcds_date_dim ....... [[31mERROR[0m in 0.17s]
+16:01:41.142424 [info ] [Thread-2 (]: 5 of 7 START sql incremental model bronze.tpcds_web_page ....................... [RUN]
+16:01:41.900413 [error] [Thread-3 (]: 3 of 7 ERROR creating sql incremental model bronze.tpcds_store ................. [[31mERROR[0m in 0.93s]
+16:01:41.903432 [error] [Thread-2 (]: 5 of 7 ERROR creating sql incremental model bronze.tpcds_web_page .............. [[31mERROR[0m in 0.76s]
+16:01:41.904345 [info ] [Thread-3 (]: 6 of 7 START sql incremental model bronze.tpcds_web_sales ...................... [RUN]
+16:01:41.906152 [info ] [Thread-2 (]: 7 of 7 START sql view model gold.unique_cocktails .............................. [RUN]
+16:01:41.918970 [error] [Thread-4 (]: 4 of 7 ERROR creating sql incremental model bronze.tpcds_store_sales ........... [[31mERROR[0m in 0.94s]
+16:01:41.944763 [error] [Thread-1 (]: 1 of 7 ERROR creating sql incremental model bronze.tpcds_customer .............. [[31mERROR[0m in 0.99s]
+16:01:42.442750 [error] [Thread-3 (]: 6 of 7 ERROR creating sql incremental model bronze.tpcds_web_sales ............. [[31mERROR[0m in 0.53s]
+16:01:43.444847 [info ] [Thread-2 (]: 7 of 7 OK created sql view model gold.unique_cocktails ......................... [[32mSUCCESS 1[0m in 1.53s]
+16:01:44.004617 [info ] [MainThread]: 
+16:01:44.005625 [info ] [MainThread]: Finished running 6 incremental models, 1 view model in 0 hours 0 minutes and 6.06 seconds (6.06s).
+16:01:44.068069 [info ] [MainThread]: 
+16:01:44.068962 [info ] [MainThread]: [31mCompleted with 6 errors, 0 partial successes, and 0 warnings:[0m
+16:01:44.069644 [info ] [MainThread]: 
+16:01:44.070352 [error] [MainThread]:   Compilation Error in model tpcds_date_dim (models/lookup_tables/tpcds_date_dim.sql)
+  This model has an enforced contract, and its 'columns' specification is missing
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_incremental_snowflake (macros/materializations/incremental.sql)
+  > called by model tpcds_date_dim (models/lookup_tables/tpcds_date_dim.sql)
+16:01:44.070983 [info ] [MainThread]: 
+16:01:44.071654 [error] [MainThread]:   Database Error in model tpcds_store (models/bronze/tpcds_store.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 24 unexpected '('.
+  syntax error line 5 at position 25 unexpected '38.0'.
+  syntax error line 5 at position 30 unexpected ')'.
+16:01:44.072265 [info ] [MainThread]: 
+16:01:44.072893 [error] [MainThread]:   Database Error in model tpcds_web_page (models/bronze/tpcds_web_page.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 24 unexpected '('.
+  syntax error line 5 at position 25 unexpected '38.0'.
+  syntax error line 5 at position 30 unexpected ')'.
+16:01:44.073606 [info ] [MainThread]: 
+16:01:44.074298 [error] [MainThread]:   Database Error in model tpcds_store_sales (models/bronze/tpcds_store_sales.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 24 unexpected '('.
+  syntax error line 5 at position 25 unexpected '38.0'.
+  syntax error line 5 at position 30 unexpected ')'.
+16:01:44.075053 [info ] [MainThread]: 
+16:01:44.075942 [error] [MainThread]:   Database Error in model tpcds_customer (models/bronze/tpcds_customer.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 24 unexpected '('.
+  syntax error line 5 at position 25 unexpected '38.0'.
+  syntax error line 5 at position 30 unexpected ')'.
+16:01:44.076818 [info ] [MainThread]: 
+16:01:44.077490 [error] [MainThread]:   Database Error in model tpcds_web_sales (models/bronze/tpcds_web_sales.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 24 unexpected '('.
+  syntax error line 5 at position 25 unexpected '38.0'.
+  syntax error line 5 at position 30 unexpected ')'.
+16:01:44.078109 [info ] [MainThread]: 
+16:01:44.078727 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=6 SKIP=0 TOTAL=7
+
+
+============================== 16:02:29.453098 | 04e86c82-021e-477f-a5fc-3300d2b56385 ==============================
+16:02:29.453098 [info ] [MainThread]: Running with dbt=1.9.4
+16:02:32.231852 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+16:02:43.680236 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.poc_dbt_snowflake.silver_fact
+- models.poc_dbt_snowflake.silver_dim
+- models.poc_dbt_snowflake.silver_pii
+- models.poc_dbt_snowflake.tests
+- seeds.qbiz
+16:02:43.939499 [info ] [MainThread]: Found 7 models, 25 data tests, 6 sources, 851 macros
+16:02:43.941835 [info ] [MainThread]: 
+16:02:43.942564 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+16:02:43.943210 [info ] [MainThread]: 
+16:02:46.918813 [info ] [Thread-1 (]: 1 of 7 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+16:02:46.919652 [info ] [Thread-2 (]: 2 of 7 START sql incremental model lookup_tables.tpcds_date_dim ................ [RUN]
+16:02:46.920383 [info ] [Thread-3 (]: 3 of 7 START sql incremental model bronze.tpcds_store .......................... [RUN]
+16:02:46.920916 [info ] [Thread-4 (]: 4 of 7 START sql incremental model bronze.tpcds_store_sales .................... [RUN]
+16:02:47.095315 [error] [Thread-2 (]: 2 of 7 ERROR creating sql incremental model lookup_tables.tpcds_date_dim ....... [[31mERROR[0m in 0.16s]
+16:02:47.096884 [info ] [Thread-2 (]: 5 of 7 START sql incremental model bronze.tpcds_web_page ....................... [RUN]
+16:02:47.375165 [error] [Thread-3 (]: 3 of 7 ERROR creating sql incremental model bronze.tpcds_store ................. [[31mERROR[0m in 0.44s]
+16:02:47.377379 [info ] [Thread-3 (]: 6 of 7 START sql incremental model bronze.tpcds_web_sales ...................... [RUN]
+16:02:47.390869 [error] [Thread-2 (]: 5 of 7 ERROR creating sql incremental model bronze.tpcds_web_page .............. [[31mERROR[0m in 0.29s]
+16:02:47.392607 [info ] [Thread-2 (]: 7 of 7 START sql view model gold.unique_cocktails .............................. [RUN]
+16:02:47.404514 [error] [Thread-1 (]: 1 of 7 ERROR creating sql incremental model bronze.tpcds_customer .............. [[31mERROR[0m in 0.48s]
+16:02:47.689453 [error] [Thread-4 (]: 4 of 7 ERROR creating sql incremental model bronze.tpcds_store_sales ........... [[31mERROR[0m in 0.75s]
+16:02:47.797124 [error] [Thread-3 (]: 6 of 7 ERROR creating sql incremental model bronze.tpcds_web_sales ............. [[31mERROR[0m in 0.42s]
+16:02:48.871316 [info ] [Thread-2 (]: 7 of 7 OK created sql view model gold.unique_cocktails ......................... [[32mSUCCESS 1[0m in 1.47s]
+16:02:49.368566 [info ] [MainThread]: 
+16:02:49.369560 [info ] [MainThread]: Finished running 6 incremental models, 1 view model in 0 hours 0 minutes and 5.42 seconds (5.42s).
+16:02:49.429825 [info ] [MainThread]: 
+16:02:49.430740 [info ] [MainThread]: [31mCompleted with 6 errors, 0 partial successes, and 0 warnings:[0m
+16:02:49.431357 [info ] [MainThread]: 
+16:02:49.432024 [error] [MainThread]:   Compilation Error in model tpcds_date_dim (models/lookup_tables/tpcds_date_dim.sql)
+  This model has an enforced contract, and its 'columns' specification is missing
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_incremental_snowflake (macros/materializations/incremental.sql)
+  > called by model tpcds_date_dim (models/lookup_tables/tpcds_date_dim.sql)
+16:02:49.432661 [info ] [MainThread]: 
+16:02:49.433338 [error] [MainThread]:   Database Error in model tpcds_store (models/bronze/tpcds_store.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 24 unexpected '('.
+  syntax error line 5 at position 25 unexpected '38.0'.
+  syntax error line 5 at position 30 unexpected ')'.
+16:02:49.433934 [info ] [MainThread]: 
+16:02:49.434567 [error] [MainThread]:   Database Error in model tpcds_web_page (models/bronze/tpcds_web_page.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 24 unexpected '('.
+  syntax error line 5 at position 25 unexpected '38.0'.
+  syntax error line 5 at position 30 unexpected ')'.
+16:02:49.435147 [info ] [MainThread]: 
+16:02:49.435775 [error] [MainThread]:   Database Error in model tpcds_customer (models/bronze/tpcds_customer.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 24 unexpected '('.
+  syntax error line 5 at position 25 unexpected '38.0'.
+  syntax error line 5 at position 30 unexpected ')'.
+16:02:49.436374 [info ] [MainThread]: 
+16:02:49.436993 [error] [MainThread]:   Database Error in model tpcds_store_sales (models/bronze/tpcds_store_sales.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 24 unexpected '('.
+  syntax error line 5 at position 25 unexpected '38.0'.
+  syntax error line 5 at position 30 unexpected ')'.
+16:02:49.437634 [info ] [MainThread]: 
+16:02:49.438313 [error] [MainThread]:   Database Error in model tpcds_web_sales (models/bronze/tpcds_web_sales.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 24 unexpected '('.
+  syntax error line 5 at position 25 unexpected '38.0'.
+  syntax error line 5 at position 30 unexpected ')'.
+16:02:49.438954 [info ] [MainThread]: 
+16:02:49.439580 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=6 SKIP=0 TOTAL=7
+
+
+============================== 16:08:19.840906 | f04416f6-25f7-4df5-b148-05b7180743f3 ==============================
+16:08:19.840906 [info ] [MainThread]: Running with dbt=1.9.4
+16:08:22.638472 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+16:08:33.413547 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'date_dim' in the 'models' section of file 'models/lookup_tables/tpcds_date_dim.yml'
+16:08:33.499104 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.poc_dbt_snowflake.not_null_date_dim_hash_key.8326d9772a' (models/lookup_tables/tpcds_date_dim.yml) depends on a node named 'date_dim' in package '' which was not found
+16:08:33.500224 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.poc_dbt_snowflake.unique_date_dim_hash_key.0444a38ea7' (models/lookup_tables/tpcds_date_dim.yml) depends on a node named 'date_dim' in package '' which was not found
+16:08:33.500916 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.poc_dbt_snowflake.not_null_date_dim_etl_created_ts.ad0d95cb81' (models/lookup_tables/tpcds_date_dim.yml) depends on a node named 'date_dim' in package '' which was not found
+16:08:33.501575 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.poc_dbt_snowflake.not_null_date_dim_etl_updated_ts.50c9849576' (models/lookup_tables/tpcds_date_dim.yml) depends on a node named 'date_dim' in package '' which was not found
+16:08:33.502253 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.poc_dbt_snowflake.not_null_date_dim_updated_by.70f32b9a2e' (models/lookup_tables/tpcds_date_dim.yml) depends on a node named 'date_dim' in package '' which was not found
+16:08:33.548453 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.poc_dbt_snowflake.silver_dim
+- models.poc_dbt_snowflake.silver_pii
+- models.poc_dbt_snowflake.tests
+- models.poc_dbt_snowflake.silver_fact
+- seeds.qbiz
+16:08:33.806499 [info ] [MainThread]: Found 7 models, 25 data tests, 6 sources, 851 macros
+16:08:33.808926 [info ] [MainThread]: 
+16:08:33.809895 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+16:08:33.810637 [info ] [MainThread]: 
+16:08:37.042620 [info ] [Thread-1 (]: 1 of 7 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+16:08:37.043424 [info ] [Thread-2 (]: 2 of 7 START sql incremental model lookup_tables.tpcds_date_dim ................ [RUN]
+16:08:37.044074 [info ] [Thread-3 (]: 3 of 7 START sql incremental model bronze.tpcds_store .......................... [RUN]
+16:08:37.044604 [info ] [Thread-4 (]: 4 of 7 START sql incremental model bronze.tpcds_store_sales .................... [RUN]
+16:08:37.261173 [error] [Thread-2 (]: 2 of 7 ERROR creating sql incremental model lookup_tables.tpcds_date_dim ....... [[31mERROR[0m in 0.20s]
+16:08:37.262930 [info ] [Thread-2 (]: 5 of 7 START sql incremental model bronze.tpcds_web_page ....................... [RUN]
+16:08:38.191783 [error] [Thread-4 (]: 4 of 7 ERROR creating sql incremental model bronze.tpcds_store_sales ........... [[31mERROR[0m in 1.13s]
+16:08:38.198060 [info ] [Thread-4 (]: 6 of 7 START sql incremental model bronze.tpcds_web_sales ...................... [RUN]
+16:08:38.235552 [error] [Thread-3 (]: 3 of 7 ERROR creating sql incremental model bronze.tpcds_store ................. [[31mERROR[0m in 1.18s]
+16:08:38.237700 [info ] [Thread-3 (]: 7 of 7 START sql view model gold.unique_cocktails .............................. [RUN]
+16:08:38.733708 [error] [Thread-4 (]: 6 of 7 ERROR creating sql incremental model bronze.tpcds_web_sales ............. [[31mERROR[0m in 0.53s]
+16:08:39.480131 [info ] [Thread-3 (]: 7 of 7 OK created sql view model gold.unique_cocktails ......................... [[32mSUCCESS 1[0m in 1.24s]
+16:08:40.849330 [info ] [Thread-1 (]: 1 of 7 OK created sql incremental model bronze.tpcds_customer .................. [[32mSUCCESS 27[0m in 3.80s]
+16:08:41.139494 [info ] [Thread-2 (]: 5 of 7 OK created sql incremental model bronze.tpcds_web_page .................. [[32mSUCCESS 60[0m in 3.87s]
+16:08:42.363243 [info ] [MainThread]: 
+16:08:42.364303 [info ] [MainThread]: Finished running 6 incremental models, 1 view model in 0 hours 0 minutes and 8.55 seconds (8.55s).
+16:08:42.425772 [info ] [MainThread]: 
+16:08:42.426661 [info ] [MainThread]: [31mCompleted with 4 errors, 0 partial successes, and 0 warnings:[0m
+16:08:42.427358 [info ] [MainThread]: 
+16:08:42.428126 [error] [MainThread]:   Compilation Error in model tpcds_date_dim (models/lookup_tables/tpcds_date_dim.sql)
+  This model has an enforced contract, and its 'columns' specification is missing
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_incremental_snowflake (macros/materializations/incremental.sql)
+  > called by model tpcds_date_dim (models/lookup_tables/tpcds_date_dim.sql)
+16:08:42.428763 [info ] [MainThread]: 
+16:08:42.429429 [error] [MainThread]:   Database Error in model tpcds_store_sales (models/bronze/tpcds_store_sales.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 24 unexpected '('.
+  syntax error line 5 at position 25 unexpected '38.0'.
+  syntax error line 5 at position 30 unexpected ')'.
+16:08:42.430032 [info ] [MainThread]: 
+16:08:42.430661 [error] [MainThread]:   Database Error in model tpcds_store (models/bronze/tpcds_store.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 24 unexpected '('.
+  syntax error line 5 at position 25 unexpected '38.0'.
+  syntax error line 5 at position 30 unexpected ')'.
+16:08:42.431341 [info ] [MainThread]: 
+16:08:42.432086 [error] [MainThread]:   Database Error in model tpcds_web_sales (models/bronze/tpcds_web_sales.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 24 unexpected '('.
+  syntax error line 5 at position 25 unexpected '38.0'.
+  syntax error line 5 at position 30 unexpected ')'.
+16:08:42.432693 [info ] [MainThread]: 
+16:08:42.433306 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=4 SKIP=0 TOTAL=7
+
+
+============================== 16:18:38.448541 | 174f56fb-b4ed-4b68-8370-706e271df853 ==============================
+16:18:38.448541 [info ] [MainThread]: Running with dbt=1.9.4
+16:18:41.303194 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+16:18:52.154372 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.poc_dbt_snowflake.tests
+- models.poc_dbt_snowflake.silver_pii
+- models.poc_dbt_snowflake.silver_dim
+- models.poc_dbt_snowflake.silver_fact
+- seeds.qbiz
+16:18:52.421961 [info ] [MainThread]: Found 7 models, 25 data tests, 6 sources, 851 macros
+16:18:52.424768 [info ] [MainThread]: 
+16:18:52.425605 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+16:18:52.426316 [info ] [MainThread]: 
+16:18:55.389792 [info ] [Thread-1 (]: 1 of 7 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+16:18:55.390475 [info ] [Thread-2 (]: 2 of 7 START sql incremental model lookup_tables.tpcds_date_dim ................ [RUN]
+16:18:55.391153 [info ] [Thread-3 (]: 3 of 7 START sql incremental model bronze.tpcds_store .......................... [RUN]
+16:18:55.391701 [info ] [Thread-4 (]: 4 of 7 START sql incremental model bronze.tpcds_store_sales .................... [RUN]
+16:18:55.595475 [error] [Thread-2 (]: 2 of 7 ERROR creating sql incremental model lookup_tables.tpcds_date_dim ....... [[31mERROR[0m in 0.19s]
+16:18:55.597051 [info ] [Thread-2 (]: 5 of 7 START sql incremental model bronze.tpcds_web_page ....................... [RUN]
+16:18:56.304240 [error] [Thread-3 (]: 3 of 7 ERROR creating sql incremental model bronze.tpcds_store ................. [[31mERROR[0m in 0.84s]
+16:18:56.306031 [info ] [Thread-3 (]: 6 of 7 START sql incremental model bronze.tpcds_web_sales ...................... [RUN]
+16:18:58.634919 [info ] [Thread-2 (]: 5 of 7 OK created sql incremental model bronze.tpcds_web_page .................. [[32mSUCCESS 60[0m in 3.04s]
+16:18:58.636694 [info ] [Thread-2 (]: 7 of 7 START sql view model gold.unique_cocktails .............................. [RUN]
+16:18:59.031125 [info ] [Thread-1 (]: 1 of 7 OK created sql incremental model bronze.tpcds_customer .................. [[32mSUCCESS 27[0m in 3.64s]
+16:18:59.900357 [info ] [Thread-2 (]: 7 of 7 OK created sql view model gold.unique_cocktails ......................... [[32mSUCCESS 1[0m in 1.26s]
+16:19:05.908770 [info ] [Thread-3 (]: 6 of 7 OK created sql incremental model bronze.tpcds_web_sales ................. [[32mSUCCESS 719384[0m in 9.60s]
+16:19:08.155621 [info ] [Thread-4 (]: 4 of 7 OK created sql incremental model bronze.tpcds_store_sales ............... [[32mSUCCESS 2880404[0m in 12.68s]
+16:19:08.703829 [info ] [MainThread]: 
+16:19:08.704808 [info ] [MainThread]: Finished running 6 incremental models, 1 view model in 0 hours 0 minutes and 16.28 seconds (16.28s).
+16:19:08.768346 [info ] [MainThread]: 
+16:19:08.769239 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+16:19:08.769953 [info ] [MainThread]: 
+16:19:08.770660 [error] [MainThread]:   Compilation Error in model tpcds_date_dim (models/lookup_tables/tpcds_date_dim.sql)
+  This model has an enforced contract, and its 'columns' specification is missing
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_incremental_snowflake (macros/materializations/incremental.sql)
+  > called by model tpcds_date_dim (models/lookup_tables/tpcds_date_dim.sql)
+16:19:08.771292 [info ] [MainThread]: 
+16:19:08.771965 [error] [MainThread]:   Compilation Error in model tpcds_store (models/bronze/tpcds_store.sql)
+  This model has an enforced contract that failed.
+  Please ensure the name, data_type, and number of columns in your contract match the columns in your model's definition.
+  
+  | column_name      | definition_type | contract_type | mismatch_reason       |
+  | ---------------- | --------------- | ------------- | --------------------- |
+  | S_TAX_PERCENTAGE |                 | FIXED         | missing in definition |
+  | S_TAX_PRECENTAGE | FIXED           |               | missing in contract   |
+  
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_incremental_snowflake (macros/materializations/incremental.sql)
+  > called by model tpcds_store (models/bronze/tpcds_store.sql)
+16:19:08.772640 [info ] [MainThread]: 
+16:19:08.773328 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=2 SKIP=0 TOTAL=7
+
+
+============================== 16:22:39.300919 | 62ca691c-05ea-4fc5-aac3-900a81842051 ==============================
+16:22:39.300919 [info ] [MainThread]: Running with dbt=1.9.4
+16:22:42.062626 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+16:22:52.644211 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.poc_dbt_snowflake.silver_pii
+- models.poc_dbt_snowflake.silver_fact
+- models.poc_dbt_snowflake.silver_dim
+- models.poc_dbt_snowflake.tests
+- seeds.qbiz
+16:22:52.910112 [info ] [MainThread]: Found 7 models, 30 data tests, 6 sources, 851 macros
+16:22:52.912611 [info ] [MainThread]: 
+16:22:52.913339 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+16:22:52.913998 [info ] [MainThread]: 
+16:22:55.710263 [info ] [Thread-1 (]: 1 of 7 START sql incremental model bronze.tpcds_customer ....................... [RUN]
+16:22:55.711013 [info ] [Thread-2 (]: 2 of 7 START sql incremental model lookup_tables.tpcds_date_dim ................ [RUN]
+16:22:55.711904 [info ] [Thread-3 (]: 3 of 7 START sql incremental model bronze.tpcds_store .......................... [RUN]
+16:22:55.712633 [info ] [Thread-4 (]: 4 of 7 START sql incremental model bronze.tpcds_store_sales .................... [RUN]
+16:22:57.397311 [info ] [Thread-3 (]: 3 of 7 OK created sql incremental model bronze.tpcds_store ..................... [[32mSUCCESS 1[0m in 1.66s]
+16:22:57.399075 [info ] [Thread-3 (]: 5 of 7 START sql incremental model bronze.tpcds_web_page ....................... [RUN]
+16:22:57.954573 [info ] [Thread-2 (]: 2 of 7 OK created sql incremental model lookup_tables.tpcds_date_dim ........... [[32mSUCCESS 1[0m in 2.23s]
+16:22:57.956356 [info ] [Thread-2 (]: 6 of 7 START sql incremental model bronze.tpcds_web_sales ...................... [RUN]
+16:22:59.629745 [info ] [Thread-1 (]: 1 of 7 OK created sql incremental model bronze.tpcds_customer .................. [[32mSUCCESS 27[0m in 3.92s]
+16:22:59.631488 [info ] [Thread-1 (]: 7 of 7 START sql view model gold.unique_cocktails .............................. [RUN]
+16:23:00.529617 [info ] [Thread-1 (]: 7 of 7 OK created sql view model gold.unique_cocktails ......................... [[32mSUCCESS 1[0m in 0.90s]
+16:23:01.172443 [info ] [Thread-3 (]: 5 of 7 OK created sql incremental model bronze.tpcds_web_page .................. [[32mSUCCESS 60[0m in 3.77s]
+16:23:06.643011 [info ] [Thread-2 (]: 6 of 7 OK created sql incremental model bronze.tpcds_web_sales ................. [[32mSUCCESS 719384[0m in 8.69s]
+16:23:09.300915 [info ] [Thread-4 (]: 4 of 7 OK created sql incremental model bronze.tpcds_store_sales ............... [[32mSUCCESS 2880404[0m in 13.57s]
+16:23:09.826543 [info ] [MainThread]: 
+16:23:10.173179 [info ] [MainThread]: Finished running 6 incremental models, 1 view model in 0 hours 0 minutes and 16.91 seconds (16.91s).
+16:23:10.238157 [info ] [MainThread]: 
+16:23:10.239061 [info ] [MainThread]: [32mCompleted successfully[0m
+16:23:10.239770 [info ] [MainThread]: 
+16:23:10.240434 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7

@@ -1,0 +1,17 @@
+
+version: 2
+
+macros:
+  - name: check_test_pet_profile
+    description: "Macro to identify test records based on pet profile ID"
+    arguments:
+      - name: col
+        type: string
+        description: "The column containing the pet profile ID"
+
+  - name: check_test_kinship_pet
+    description: "Macro to identify test records based on Kinship pet ID"
+    arguments:
+      - name: col
+        type: string
+        description: "The column containing the Kinship pet ID"

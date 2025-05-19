@@ -1,0 +1,13 @@
+
+version: 2
+
+macros:
+  - name: from_unixtime
+    description: "Macro to convert UNIX time epoch into datestamp."
+    arguments:
+      - name: column_name
+        type: string
+        description: "Name of the column to convert from UNIX time"
+      - name: div
+        type: integer
+        description: "Specifies how much to divide by the UNIX time column to arrive at a seconds-level conversion. Defaults to 1."

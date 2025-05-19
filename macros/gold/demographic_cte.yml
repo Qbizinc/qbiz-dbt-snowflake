@@ -1,0 +1,19 @@
+version: 2
+
+macros:
+  - name: demographic_cte
+    description: "This macro generates a CTE from dim_user_demographics for a specified attribute type."
+    arguments:
+      - name: name
+        type: string
+        description: "Custom name for the CTE to be defined"
+      - name: demographic_type
+        type: string
+        description: "The attribute name to look up in the demographics"
+      - name: is_first
+        type: boolean
+        description: "Indication of if this CTE should be considered the First one (requiring WITH keyword)"
+      - name: demographic_source
+        type: string
+        description: "Table name (dbt reference name) for where the demographic data is stored, 
+                      defaults to 'dim_user_demographics'"

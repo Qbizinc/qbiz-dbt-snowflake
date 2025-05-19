@@ -1,0 +1,113 @@
+version: 2
+
+models:
+  - name: tpcds_web_sales
+    description: "TPCDS web_sales fact table containing transactional sales data from web channels."
+    columns:
+      - name: WS_SOLD_DATE_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the date the sale occurred."
+      - name: WS_SOLD_TIME_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the time the sale occurred."
+      - name: WS_SHIP_DATE_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the date the item was shipped."
+      - name: WS_ITEM_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the item sold."
+      - name: WS_BILL_CUSTOMER_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the billing customer."
+      - name: WS_BILL_CDEMO_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the billing customer demographics."
+      - name: WS_BILL_HDEMO_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the billing household demographics."
+      - name: WS_BILL_ADDR_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the billing address."
+      - name: WS_SHIP_CUSTOMER_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the shipping customer."
+      - name: WS_SHIP_CDEMO_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the shipping customer demographics."
+      - name: WS_SHIP_HDEMO_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the shipping household demographics."
+      - name: WS_SHIP_ADDR_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the shipping address."
+      - name: WS_WEB_PAGE_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the web page."
+      - name: WS_WEB_SITE_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the web site."
+      - name: WS_SHIP_MODE_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the shipping mode."
+      - name: WS_WAREHOUSE_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the warehouse."
+      - name: WS_PROMO_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the promotion."
+      - name: WS_ORDER_NUMBER
+        data_type: numeric(38,0)
+        description: "Order number for the web sales transaction."
+      - name: WS_QUANTITY
+        data_type: numeric(38,0)
+        description: "Quantity of items sold."
+      - name: WS_WHOLESALE_COST
+        data_type: numeric(7,2)
+        description: "Wholesale cost per unit."
+      - name: WS_LIST_PRICE
+        data_type: numeric(7,2)
+        description: "List price per unit."
+      - name: WS_SALES_PRICE
+        data_type: numeric(7,2)
+        description: "Actual sales price per unit."
+      - name: WS_EXT_DISCOUNT_AMT
+        data_type: numeric(7,2)
+        description: "Extended discount amount."
+      - name: WS_EXT_SALES_PRICE
+        data_type: numeric(7,2)
+        description: "Extended sales price."
+      - name: WS_EXT_WHOLESALE_COST
+        data_type: numeric(7,2)
+        description: "Extended wholesale cost."
+      - name: WS_EXT_LIST_PRICE
+        data_type: numeric(7,2)
+        description: "Extended list price."
+      - name: WS_EXT_TAX
+        data_type: numeric(7,2)
+        description: "Extended tax amount."
+      - name: WS_COUPON_AMT
+        data_type: numeric(7,2)
+        description: "Coupon discount amount."
+      - name: WS_EXT_SHIP_COST
+        data_type: numeric(7,2)
+        description: "Extended shipping cost."
+      - name: WS_NET_PAID
+        data_type: numeric(7,2)
+        description: "Net amount paid."
+      - name: WS_NET_PAID_INC_TAX
+        data_type: numeric(7,2)
+        description: "Net amount paid including tax."
+      - name: WS_NET_PAID_INC_SHIP
+        data_type: numeric(7,2)
+        description: "Net amount paid including shipping."
+      - name: WS_NET_PAID_INC_SHIP_TAX
+        data_type: numeric(7,2)
+        description: "Net amount paid including shipping and tax."
+      - name: WS_NET_PROFIT
+        data_type: numeric(7,2)
+        description: "Net profit from the sale."
+      - "{{ var('bronze_layer_ddl')['hash_key_column'] }}"
+      - "{{ var('common_ddl')['etl_created_ts_column'] }}"
+      - "{{ var('common_ddl')['etl_updated_ts_column'] }}"
+      - "{{ var('common_ddl')['updated_by_column'] }}"
+      - "{{ var('common_ddl')['update_notes_column'] }}"

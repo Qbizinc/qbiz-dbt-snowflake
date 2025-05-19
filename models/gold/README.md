@@ -1,0 +1,3 @@
+The Gold layer, or Reporting/Data Mart area, is for business rule specific tables. The primary purpose of these tables is to provide code reuse for reporting as well as a central source of truth for heavily transformed data designed to meet specific business needs.
+
+QBiz best practices are that any data with very specific business rule oriented transformations, as well as things like time series, aggregations, and the like, belong at this layer. 

@@ -1,0 +1,13 @@
+
+version: 2
+
+macros:
+  - name: ga4_create_bronze_model
+    description: "This macro generates the SQL to produce a Bronze Layer table for the specified GA4 Copper Layer model."
+    arguments:
+      - name: source_table_ref
+        type: relation
+        description: "The GA4 Copper Layer model relation (ref) to be ingested to the Bronze Layer"
+      - name: lookback_days
+        type: integer
+        description: "Specifies the ingestion window in days (from today) in case the build is not a full-refresh"

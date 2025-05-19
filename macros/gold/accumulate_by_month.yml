@@ -1,0 +1,27 @@
+version: 2
+
+macros:
+  - name: accumulate_by_month
+    description: "This macro generates the SQL to produce a table that accumulates a value by a given date field."
+    arguments:
+      - name: source_table
+        type: string
+        description: "The table from which to accumulate, i.e. dim_users"
+      - name: date_field
+        type: string
+        description: "The name of the field which the accumulation will be performed over, i.e. user_create_date"
+      - name: date_field_name
+        type: string
+        description: "A custom name for the date field"
+      - name: accumulated_field_name
+        type: string
+        description: "The name you want for the accumulated value i.e. num_users"
+      - name: filter_for_current
+        type: boolean
+        description: "Whether or not to use the silver table `is_current` flag to filter"
+      - name: extra_fields
+        type: array
+        description: "Extra fields for accumulation"
+      - name: sum_fields
+        type: array
+        description: "Analytical fields which you want to sum in the results"

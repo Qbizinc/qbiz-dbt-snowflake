@@ -1,0 +1,39 @@
+
+version: 2
+
+macros:
+  - name: fact_user_journey_data_from_ga4_table
+    description: "Macro that selects the appropriate columns for the fact_user_journey_events table from given GA4 bronze layer sources"
+    arguments:
+      - name: ga4_property_name
+        description: "GA4 property name – e.g. 'Kinship'"
+        type: string
+      - name: extracted_table
+        description: "The extracted GA4 table in the bronze layer"
+        type: reference
+      - name: base_table
+        description: "The base GA4 table in the bronze layer"
+        type: reference
+      - name: lookback_days_start
+        description: "Number of days where to start the lookback window for incremental runs"
+        type: integer
+
+  - name: dim_content_from_ga4_table
+    description: "Macro to select the source table for the dim_content model given a GA4 source"
+    arguments:
+      - name: extracted_table
+        description: "The extracted GA4 table in the bronze layer"
+        type: reference
+      - name: lookback_days_start
+        description: "Number of days where to start the lookback window for incremental runs"
+        type: integer
+
+  - name: dim_traffic_source_from_ga4_table
+    description: "Macro to select the source table for the dim_traffic_source model given a GA4 source"
+    arguments:
+      - name: extracted_table
+        description: "The extracted GA4 table in the bronze layer"
+        type: reference
+      - name: lookback_days_start
+        description: "Number of days where to start the lookback window for incremental runs"
+        type: integer

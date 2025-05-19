@@ -1,0 +1,13 @@
+
+version: 2
+
+macros:
+  - name: ga4_create_extracted_model
+    description: "Macro to build an extracted GA4 model from a given source"
+    arguments:
+      - name: source_table
+        description: "Source to create the extracted table from"
+        type: reference
+      - name: lookback_days_start
+        description: "Number of days to start lookback window during incremental loads – defaults to 7"
+        type: integer

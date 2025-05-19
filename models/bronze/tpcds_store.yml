@@ -1,0 +1,98 @@
+version: 2
+
+models:
+  - name: tpcds_store
+    description: "TPCDS store table containing retail store location and operational details."
+    columns:
+      - name: S_STORE_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for the store."
+      - name: S_STORE_ID
+        data_type: string
+        description: "Business key for the store."
+      - name: S_REC_START_DATE
+        data_type: date
+        description: "Record start date."
+      - name: S_REC_END_DATE
+        data_type: date
+        description: "Record end date."
+      - name: S_CLOSED_DATE_SK
+        data_type: numeric(38,0)
+        description: "Surrogate key for store closing date."
+      - name: S_STORE_NAME
+        data_type: string
+        description: "Store name."
+      - name: S_NUMBER_EMPLOYEES
+        data_type: numeric(38,0)
+        description: "Number of employees."
+      - name: S_FLOOR_SPACE
+        data_type: numeric(38,0)
+        description: "Floor space in square feet."
+      - name: S_HOURS
+        data_type: string
+        description: "Store operating hours."
+      - name: S_MANAGER
+        data_type: string
+        description: "Store manager name."
+      - name: S_MARKET_ID
+        data_type: numeric(38,0)
+        description: "Market identifier."
+      - name: S_GEOGRAPHY_CLASS
+        data_type: string
+        description: "Geographic classification."
+      - name: S_MARKET_DESC
+        data_type: string
+        description: "Market description."
+      - name: S_MARKET_MANAGER
+        data_type: string
+        description: "Market manager name."
+      - name: S_DIVISION_ID
+        data_type: numeric(38,0)
+        description: "Division identifier."
+      - name: S_DIVISION_NAME
+        data_type: string
+        description: "Division name."
+      - name: S_COMPANY_ID
+        data_type: numeric(38,0)
+        description: "Company identifier."
+      - name: S_COMPANY_NAME
+        data_type: string
+        description: "Company name."
+      - name: S_STREET_NUMBER
+        data_type: string
+        description: "Street number component of address."
+      - name: S_STREET_NAME
+        data_type: string
+        description: "Street name component of address."
+      - name: S_STREET_TYPE
+        data_type: string
+        description: "Street type (Ave, St, etc)."
+      - name: S_SUITE_NUMBER
+        data_type: string
+        description: "Suite/apt number."
+      - name: S_CITY
+        data_type: string
+        description: "City name."
+      - name: S_COUNTY
+        data_type: string
+        description: "County name."
+      - name: S_STATE
+        data_type: string
+        description: "State abbreviation."
+      - name: S_ZIP
+        data_type: string
+        description: "Zip code."
+      - name: S_COUNTRY
+        data_type: string
+        description: "Country name."
+      - name: S_GMT_OFFSET
+        data_type: numeric(5,2)
+        description: "GMT offset in hours."
+      - name: S_TAX_PRECENTAGE
+        data_type: numeric(5,2)
+        description: "Sales tax percentage."
+      - "{{ var('bronze_layer_ddl')['hash_key_column'] }}"
+      - "{{ var('common_ddl')['etl_created_ts_column'] }}"
+      - "{{ var('common_ddl')['etl_updated_ts_column'] }}"
+      - "{{ var('common_ddl')['updated_by_column'] }}"
+      - "{{ var('common_ddl')['update_notes_column'] }}"

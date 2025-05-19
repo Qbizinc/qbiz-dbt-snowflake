@@ -1,0 +1,109 @@
+
+version: 2
+
+macros:
+  - name: create_extraction_query
+    description: "Macro that creates a table where the given event parameters are extracted"
+    arguments:
+      - name: columns
+        description: "A list of column names to include from the original model"
+        type: array
+      - name: event_params
+        description: "A list of event parameter dictionaries that have to at least define 'field_key' – which is the event_params key to expand.
+                      Other possible dictionary keys to define are 'null_value' that defines what to pass null values as – if not defined will get an empty string assigned.
+                      'alias' that defines what to alias the new parameter column as – if not defined will get the 'field_key' values assigned.
+                      'value_type' which can be either 'string', 'int', 'float' or 'double' and specifies which value type the event_params value is originally in
+                      the GA4 source data – if not defined will get 'string' assigned.
+                      E.g. [({'field_key': 'kinship_id', 'alias': 'kinship_user_id'}), ({'field_key': 'ga_session_id', 'value_type': 'int'})]"
+        type: array
+      - name: user_properties
+        description: "A list of user property dictionaries that have to at least define 'field_key' – which is the user_property key to expand.
+                      Other possible dictionary keys to define are 'null_value' that defines what to pass null values as – if not defined will get an empty string assigned.
+                      'alias' that defines what to alias the new parameter column as – if not defined will get the 'field_key' values assigned.
+                      'value_type' which can be either 'string', 'int', 'float' or 'double' and specifies which value type the user_property value is originally in
+                      the GA4 source data – if not defined will get 'string' assigned.
+                      E.g. [({'field_key': 'locale'}), ({'field_key': 'first_open_time', 'value_type': 'int', 'alias': 'page_first_opened'})]"
+        type: array
+      - name: source_table
+        description: "The table from which to select and extract the data"
+        type: reference
+      - name: group_by_column
+        description: "Name of the column to group the events by after explosion. Defaults to 'hash_key'"
+        type: string
+
+  - name: loop_through_columns
+    description: "Macro that loops through a given list of columns as part of a select statement"
+    arguments:
+      - name: columns
+        description: "List of column names to select"
+        type: array
+      - name: prefix
+        description: "Prefix to apply before column names. Defaults to an empty string"
+        type: string
+      - name: is_aggregated
+        description: "Whether to use an aggregate function on the columns. Defaults to false"
+        type: boolean
+      - name: aggregate_func
+        description: "Name of aggregate function to use on columns – has to be Redshift compatible. Defaults to 'MAX'"
+        type: string
+
+  - name: process_field
+    description: "Macro to process and standardise the nested field dictionary passed"
+    arguments:
+      - name: field
+        description: "Nested field dictionary to standardise"
+        type: dictionary
+
+  - name: loop_through_nested_fields
+    description: "Macro that loops through a given list of nested field dictionaries, accessing a given key as part of a select statement"
+    arguments:
+      - name: nested_fields
+        description: "List of nested field dictionaries to loop through"
+        type: array
+      - name: field_dict_key
+        description: "The key to access within the dictionaries"
+        type: string
+      - name: is_aggregated
+        description: "Whether to use an aggregate function on the columns. Defaults to false"
+        type: boolean
+      - name: aggregate_func
+        description: "Name of aggregate function to use on columns – has to be Redshift compatible. Defaults to 'MAX'"
+        type: string
+
+  - name: expand_value_columns
+    description: "Macro to expand nested field values related to given value keys as new columns"
+    arguments:
+      - name: value_fields
+        description: "A list of nested value dictionaries that have to at least define 'field_key' – which is the value key to expand.
+                      Other possible dictionary keys to define are 'null_value' that defines what to pass null values as – if not defined will get an empty string assigned.
+                      'alias' that defines what to alias the new parameter column as – if not defined will get the 'field_key' values assigned.
+                      'value_type' which can be either 'string', 'int', 'float' or 'double' and specifies which value type the nested value is originally in
+                      the GA4 source data – if not defined will get 'string' assigned.
+                      E.g. [({'field_key': 'kinship_id', 'alias': 'kinship_user_id'}), ({'field_key': 'ga_session_id', 'value_type': 'int'})]"
+        type: array
+      - name: prefix
+        description: "Prefix that is used for the nested fields – use 'event_params' for event parameter and 'user_properties' for user properties."
+        type: string
+
+  - name: explode_nested_fields
+    description: "Macro that selects data and explodes nested fields from the source table"
+    arguments:
+      - name: columns
+        description: "A list of column names to include from the original model"
+        type: array
+      - name: source_table
+        description: "The table from which to select and extract the data"
+        type: reference
+      - name: group_by_column
+        description: "Name of the column to group the events by after explosion – included to select along columns"
+        type: string
+
+  - name: extract_event_params_string
+    description: "Macro to extract a given event parameter string value from the event_params JSON stirng"
+    arguments:
+      - name: event_params_key
+        description: "Key of the event parameter to extract – e.g. 'kinship_id'"
+        type: string
+      - name: alais_name
+        description: "Alias of the column that will contain the extracted value – e.g. kinship_user_id"
+        type: string

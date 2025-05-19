@@ -1,0 +1,12 @@
+
+version: 2
+
+macros:
+  - name: create_change_flags
+    description: "Macro to create change flag columns for given fields. It marks with a true boolean whether the current
+                  value of a field is different to the previous value along some grouping logic (e.g. by user). It is meant
+                  to be used in combination with the create_lag_cols macro that drives the above grouping logic."
+    arguments:
+      - name: flag_cols
+        description: "List of column names to create a change flag column for."
+        type: array

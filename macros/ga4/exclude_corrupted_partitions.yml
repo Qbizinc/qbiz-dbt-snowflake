@@ -1,0 +1,10 @@
+
+version: 2
+
+macros:
+  - name: exclude_corrupted_partitions
+    description: "Macro that excludes partitions with corrupted parquet files – see JIRA ticket KDM-350 for details"
+    arguments:
+      - name: partition_dates
+        description: "List of partition dates that contain corrupted parquet files in the format of 'YYYYMMDD'"
+        type: list

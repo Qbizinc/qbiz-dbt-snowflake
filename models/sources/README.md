@@ -1,0 +1,1 @@
+The Source area contains metadata that dbt uses to define the raw data sources for consumption. Please refer to the dbt documentation on how to set these up.

@@ -1,0 +1,9 @@
+version: 2
+
+macros:
+  - name: get_lookback_dt
+    description: "Macro that contains the date math and returns the timestamp for 'n days ago from the current time'."
+    arguments:
+      - name: n_days
+        type: integer
+        description: "Number of days from today"
