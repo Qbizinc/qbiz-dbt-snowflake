@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: "Customer dimension sourced from the TPCDS customer table with PII removed."
+    columns:
+      - name: dim_customer_id
+        data_type: string
+        description: "Surrogate key for the dim_customer table." 
+      - name: customer_sk
+        data_type: numeric(38,0)
+        description: "Surrogate key for the source tpcds customer table."        
+      - name: customer_id
+        data_type: string
+        description: "Business key for the customer."
+      - name: first_ship_date
+        data_type: date
+        description: "Date of first shipment"
+      - name: first_sales_date
+        data_type: date
+        description: "Date of first sale"
+      - name: preferred_customer_flg
+        data_type: string
+        description: "Preferred customer flag."
+      - name: last_review_date
+        data_type: date
+        description: "Last review date of the customer."
+      - name: etl_ts
+        data_type: timestamp_ltz
+        description: "Timestamp of the bronze layer record"
+      - name: hash_key
+        description: "Hash of values in the source table, used to identify meaningful changes to be captured"
+        data_type: string
+      - "{{ var('common_ddl')['etl_created_ts_column'] }}"
+      - "{{ var('common_ddl')['etl_updated_ts_column'] }}"
+      - "{{ var('common_ddl')['updated_by_column'] }}"
+      - "{{ var('common_ddl')['update_notes_column'] }}"    
+      - "{{ var('silver_layer_dim_ddl')['first_record_flg_column'] }}"
+      - "{{ var('silver_layer_dim_ddl')['is_current_column'] }}"
+      - "{{ var('silver_layer_dim_ddl')['valid_from_column'] }}"
+      - "{{ var('silver_layer_dim_ddl')['valid_to_column'] }}"

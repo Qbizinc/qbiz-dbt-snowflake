@@ -1,0 +1,122 @@
+/*
+SQL to create the customer dimension in the Silver Layer.
+*/
+
+WITH customer_updates AS (
+    SELECT C_CUSTOMER_SK
+         , ROW_NUMBER() OVER (
+               PARTITION BY C_CUSTOMER_SK ORDER BY C_LAST_REVIEW_DATE DESC
+           ) AS row_no
+      FROM {{ ref('tpcds_customer') }}
+),
+
+source_data AS (
+    SELECT c.C_CUSTOMER_SK as customer_sk
+         , c.C_CUSTOMER_ID as customer_id
+		 
+		--, c.C_CURRENT_CDEMO_SK -- Would be flattened as part of dim_customer_pii
+		--, c.C_CURRENT_HDEMO_SK -- Would be flattened as part of dim_customer_pii
+		--, c.C_CURRENT_ADDR_SK -- Would be flattened as part of dim_customer_pii
+		, ddh.d_date as first_ship_date --c.C_FIRST_SHIPTO_DATE_SK
+		, dds.d_date as first_sales_date --c.C_FIRST_SALES_DATE_SK
+		 
+         , c.C_SALUTATION -- move to pii
+         , c.C_FIRST_NAME -- move to pii
+         , c.C_last_name -- move to pii
+         , c.C_PREFERRED_CUST_FLAG as preferred_customer_flg
+         , c.c_birth_day -- move to pii
+         , c.c_birth_month -- move to pii
+         , c.c_birth_year -- move to pii
+         , c.c_birth_country -- move to pii
+         , c.c_login -- move to pii
+         , c.c_email_address -- move to pii
+         , ddr.d_date as last_review_date
+         , {{
+               dbt_utils.generate_surrogate_key(
+                   [
+                       'c.C_CUSTOMER_SK',
+                       'c.C_CUSTOMER_ID',
+					   'c.C_PREFERRED_CUST_FLAG',
+                       'ddh.d_date',
+                       'dds.d_date',
+                       'ddr.d_date'
+                   ]
+               )
+           }} AS hash_key
+         , CURRENT_TIMESTAMP AS etl_ts
+      FROM {{ ref('tpcds_customer') }} c
+      LEFT JOIN {{ ref('tpcds_date_dim') }} ddh
+        ON c.C_FIRST_SHIPTO_DATE_SK = ddh.d_date
+	  LEFT JOIN {{ ref('tpcds_date_dim') }} dds
+        ON c.C_FIRST_SALES_DATE_SK = dds.d_date
+	  LEFT JOIN {{ ref('tpcds_date_dim') }} ddr
+        ON c.C_LAST_REVIEW_DATE = ddr.d_date
+    {% if is_incremental() %}
+     WHERE c.C_LAST_REVIEW_DATE > (
+         SELECT MAX(valid_from) FROM {{ this }}
+     )
+    {% endif %}
+),
+
+ranked_data AS (
+    SELECT *
+         , {{
+               ranked_data_columns(
+                   scd_key_col='customer_sk',
+                   primary_update_time_col='last_review_date',
+                   secondary_update_time_col='etl_ts'
+               )
+           }}
+      FROM source_data
+),
+
+valid_data AS (
+    SELECT hash_key
+         , c_customer_sk
+         , c_customer_id
+         , c_salutation
+         , c_first_name
+         , c_last_name
+         , c_preferred_cust_flag
+         , c_birth_day
+         , c_birth_month
+         , c_birth_year
+         , c_birth_country
+         , c_login
+         , c_email_address
+         , customer_address
+         , combined_update_ts
+         , {{
+               scd_time_columns(
+                   scd_key_col='c_customer_sk',
+                   initial_record_time_col='c_last_review_date'
+               )
+           }}
+      FROM ranked_data
+)
+
+SELECT {{
+           dbt_utils.generate_surrogate_key(
+               ['vd.hash_key', 'vd.combined_update_ts']
+           )
+       }} AS dim_customer_id
+     , vd.c_customer_sk
+     , vd.c_customer_id
+     , vd.c_salutation
+     , vd.c_first_name
+     , vd.c_last_name
+     , vd.c_preferred_cust_flag
+     , vd.c_birth_day
+     , vd.c_birth_month
+     , vd.c_birth_year
+     , vd.c_birth_country
+     , vd.c_login
+     , vd.c_email_address
+     , vd.customer_address
+     , vd.hash_key
+     , vd.valid_from
+     , vd.valid_to
+     , vd.is_current
+     , vd.first_record_flg
+     , {{ audit_columns() }}
+  FROM valid_data vd

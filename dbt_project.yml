@@ -74,6 +74,7 @@ models:
         - "lookup_tables"
       +docs:
         node_color: "#C4A484"   # Light Brown
+    # NOTE: We break the 'silver' schema out into multiple folders here as an example that this can be done as needed    
     silver_dim:
       +materialized: incremental
       +schema: silver
@@ -99,7 +100,8 @@ models:
         - "silver"
       +docs:
         node_color: "#C0C0C0" # Silver
-    # NOTE: When/Why pii schema    
+    # Note: Having a PII schema is one method of segregating out PII data from regular analytical data
+    #       In the absence of any other best practices being performed at a client, this one provides a simple way to control access
     silver_pii:
       +schema: silver_pii
       +materialized: incremental
@@ -212,13 +214,13 @@ vars:
     valid_from_column:
       name: valid_from
       description: "[Specify TZ] timestamp the record became active in the dimension. Needs to be called 'valid_from' because of how dbt does things behind the scenes."
-      data_type: timestamp
+      data_type: timestamp_ltz
       data_tests:
         - not_null
     valid_to_column:
       name: valid_to
       description: "[Specify TZ] timestamp the record became inactive in the dimension. Is set to null for the active record. Needs to be called 'valid_to' because of how dbt does things behind the scenes. We'd also like it to be something other than null, but dbt currently overrides that."
-      data_type: timestamp
+      data_type: timestamp_ltz
   silver_layer_fact_ddl:
     hash_key_column:
       name: hash_key

@@ -1,0 +1,65 @@
+version: 2
+
+models:
+  - name: dim_customer_pii
+    description: "Customer dimension sourced from the TPCDS customer table with PII removed."
+    columns:
+      - name: c_customer_sk
+        data_type: numeric(38,0)
+        description: "Surrogate key for the customer."        
+      - name: c_customer_id
+        data_type: string
+        description: "Business key for the customer."
+      - name: c_current_cdemo_sk
+        data_type: numeric(38,0)
+        description: "Current customer demographic surrogate key."
+      - name: c_current_hdemo_sk
+        data_type: numeric(38,0)
+        description: "Current household demographic surrogate key."
+      - name: c_current_addr_sk
+        data_type: numeric(38,0)
+        description: "Current address surrogate key."
+      - name: c_first_shipto_date_sk
+        data_type: numeric(38,0)
+        description: "Date of first shipment surrogate key."
+      - name: c_first_sales_date_sk
+        data_type: numeric(38,0)
+        description: "Date of first sale surrogate key."
+      - name: c_salutation
+        data_type: string
+        description: "Customer salutation."
+      - name: c_first_name
+        data_type: string
+        description: "Customer first name."
+      - name: c_last_name
+        data_type: string
+        description: "Customer last name."
+      - name: c_preferred_cust_flag
+        data_type: string
+        description: "Preferred customer flag."
+      - name: c_birth_day
+        data_type: numeric(38,0)
+        description: "Customer birth day."
+      - name: c_birth_month
+        data_type: numeric(38,0)
+        description: "Customer birth month."
+      - name: c_birth_year
+        data_type: numeric(38,0)
+        description: "Customer birth year."
+      - name: c_birth_country
+        data_type: string
+        description: "Customer birth country."
+      - name: c_login
+        data_type: string
+        description: "Customer login name."
+      - name: c_email_address
+        data_type: string
+        description: "Customer email address."
+      - name: c_last_review_date
+        data_type: string
+        description: "Surrogate key for the last review date."
+      - "{{ var('bronze_layer_ddl')['hash_key_column'] }}"
+      - "{{ var('common_ddl')['etl_created_ts_column'] }}"
+      - "{{ var('common_ddl')['etl_updated_ts_column'] }}"
+      - "{{ var('common_ddl')['updated_by_column'] }}"
+      - "{{ var('common_ddl')['update_notes_column'] }}"          

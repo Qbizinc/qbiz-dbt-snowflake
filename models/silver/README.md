@@ -1,3 +1,0 @@
-The Silver layer, or Analytical/Warehouse area, is for data that has been transformed for analytical purposes. The primary purpose of these tables is to configure the source data in a way that is easily joinable and scalable for reporting performance.
-
-QBiz best practices are for the bulk of data transformations to be done at this layer. In addition, we recommend that the schema be organized using a Star Schema (Fact & Dimension) or similar approach.
